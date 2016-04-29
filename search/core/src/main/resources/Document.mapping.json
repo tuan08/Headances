@@ -1,0 +1,22 @@
+{
+  "Document": {
+    "properties" : {
+      "modifiedBy" : { "type" : "string", "index" : "analyzed", "analyzer" : "vn_analyzer" },
+
+      "content" : {
+        "type" : "multi_field",
+        "fields" : {
+          "content" :  {"type" : "string", "index" : "analyzed" },
+          "vncontent" : {"type" : "string", "index" : "analyzed" }
+        }
+      },
+
+      "entities" : {
+        "type" : "object",
+        "properties" : {
+          "location"  : { "type" : "geo_point" }
+        }
+      }
+    }
+  }
+}

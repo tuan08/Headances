@@ -1,0 +1,76 @@
+{
+  "id" : "sample1" ,
+  "createdBy" : "system" ,
+  "createdDate": 1293814800000,
+  "modifiedBy" : "system" ,
+  "modifiedDate": 1293814800000 ,
+
+  "title" : "sample title",
+  "description" : "sample description",
+  "content" : "sample content",
+
+  "location" : {
+    "lat" : 40.73,
+    "lon" : -74.1
+  },
+
+  "nested" : {
+    "string" : "string",
+    "text" : "this is a text",
+    "tag" : [ "tag1", "tag2", "colon:colon" ],
+    "intValue" : 1,
+    "longValue" : 1,
+    "doubleValue" : 1.0,
+    "booleanValue" : true
+  }
+} {
+  "id" : "sample2" ,
+  "createdBy" : "system" ,
+  "createdDate": 1293814800000,
+  "modifiedBy" : "system" ,
+  "modifiedDate": 1293814800000 ,
+
+  "title" : "sample title",
+  "description" : "sample description",
+  "content" : "sample content",
+
+  "location" : {
+    "lat" : 40.73,
+    "lon" : -74.1
+  },
+
+  "nested" : {
+    "string" : "string",
+    "text" : "this is a text",
+    "tag" : [ "tag1", "tag2", "colon:colon" ],
+    "intValue" : 1,
+    "longValue" : 1,
+    "doubleValue" : 1.0,
+    "booleanValue" : true
+  }
+} {
+  "id" : "sample3" ,
+  "createdBy" : "system" ,
+  "createdDate": 1293814800000,
+  "modifiedBy" : "system" ,
+  "modifiedDate": 1293814800000 ,
+
+  "title" : "sample title",
+  "description" : "sample description",
+  "content" : "sample content",
+
+  "location" : {
+    "lat" : 40.73,
+    "lon" : -74.1
+  },
+
+  "nested" : {
+    "string" : "string",
+    "text" : "this is a text",
+    "tag" : [ "tag1", "tag2", "colon:colon" ],
+    "intValue" : 1,
+    "longValue" : 1,
+    "doubleValue" : 1.0,
+    "booleanValue" : true
+  }
+}

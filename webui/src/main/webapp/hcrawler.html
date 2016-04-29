@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HCrawler</title>
+
+    <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="css/blueprint/print.css"  type="text/css" media="print" />
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" href="<c:url value="/resources/blueprint/ie.css" />" type="text/css" media="screen, projection" />
+    <![endif]-->
+    <link rel="stylesheet" href="css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="css/hcrawler.css"  type="text/css" />
+
+    <link rel="stylesheet" href="js/jquery/css/custom-theme/jquery-ui-1.8.21.custom.css" type="text/css"/>
+    <link rel="stylesheet" href="js/DataTables/media/css/jquery.dataTables.css" type="text/css"/>
+
+    <script src="js/jquery/js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script src="js/DataTables/media/js/jquery.dataTables.min.js"></script>
+    
+    <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.4/underscore-min.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.3.3/backbone-min.js"></script>
+  	
+  </head>
+
+  <body style="padding: 10px 15px">
+    <hr class="space"/>
+    <h2 class="alt">HCrawler, a small but powerful webcrawler</h2>
+    <hr/>
+
+    <div class="span-5 colborder">
+      <div>
+        <h6>Crawler Master</h6>
+        <hr/>
+        <div id="ctrl-col-master"></div>
+        <hr class="space"/>
+      </div>
+      <div>
+        <h6>Crawler Fetchers</h6>
+        <hr/>
+        <div id="ctrl-col-fetchers"></div>
+        <hr class="space"/>
+      </div>
+
+      <div>
+        <h6>Crawler Configuration</h6>
+        <hr/>
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+        </div>
+        <hr class="space"/>
+      </div>
+    </div>
+
+    <div class="span-24 last">
+      <div id="crawler-workspace">
+        <ul>
+          <li><a href="#tabs-help">Help</a></li>
+        </ul>
+        <div id="tabs-help">
+          <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur 
+          Phasellus ipsum. Nunc tristique tempus lectus.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/crawler/Server.js"></script>
+  	<script src="js/uicomp/Tab.js"></script>
+  	<script src="js/uicomp/JVMInfo.js"></script>
+    <script src="js/crawler/Master.js"></script>
+    <script src="js/crawler/Fetcher.js"></script>
+
+    <script src="js/crawler/ConnectionForm.js"></script>
+    <script src="js/crawler/DataProcessInfo.js"></script>
+    <script src="js/crawler/URLScheduleInfo.js"></script>
+    <script src="js/crawler/URLCommitInfo.js"></script>
+    <script src="js/crawler/SiteInfo.js"></script>
+    <script src="js/crawler/FetcherInfo.js"></script>
+
+    <script src="js/crawler/Crawler.js"></script>
+    <script>
+      crawler.Crawler.connect() ;
+    </script>
+  </body>
+</html>

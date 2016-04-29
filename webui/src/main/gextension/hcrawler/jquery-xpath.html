@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HCrawler</title>
+    <style>
+      table { border: 1px solid black ; border-collapse:collapse; }
+      td, th { border: 1px solid black ; padding: 5px 10px ; }
+    </style>
+    <script src="jquery/js/jquery-1.7.2.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.8.21.custom.min.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <h3 class='h3'>h3 title 1</h3>
+      <h3 class='h3'>h3 title 2</h3>
+      <h3 class='h3 first'>h3 title first</h3>
+      <h3 class='h3 second'>h3 title second</h3>
+      <p>a paragraph</p>
+    </div>
+    <table style='width: 100%'>
+      <tr>
+        <th>Xpath</th>
+        <th>Result</th>
+      </tr>
+
+      <tr>
+        <td>//html/body/div/h3[class='h3']</td>
+        <td>
+          <script>
+            var result = $(document).find("html body div h3[class='h3']")
+            for(var i = 0; i < result.size(); i++) {
+              document.write(result[i].textContent + '<br/>');
+            }
+          </script>
+        </td>
+      </tr>
+
+      <tr>
+        <td>//body/h3[class='h3']</td>
+        <td>
+          <script>
+            var result = $(document).find("body h3[class='h3']")
+            for(var i = 0; i < result.size(); i++) {
+              document.write(result[i].textContent + '<br/>');
+            }
+          </script>
+        </td>
+      </tr>
+
+      <tr>
+        <td>//html/body/div/h3[class='h3 first']</td>
+        <td>
+          <script>
+            var result = $(document).find("html body div h3[class='h3 first']")
+            for(var i = 0; i < result.size(); i++) {
+              document.write(result[i].textContent + '<br/>');
+            }
+          </script>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

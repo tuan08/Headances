@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:si="http://www.springframework.org/schema/integration"
+       xmlns:amq="http://activemq.apache.org/schema/core"
+       xmlns:si-jms="http://www.springframework.org/schema/integration/jms"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context-3.0.xsd
+                           http://www.springframework.org/schema/jms 
+                           http://www.springframework.org/schema/jms/spring-jms-3.0.xsd
+                           http://www.springframework.org/schema/integration
+                           http://www.springframework.org/schema/integration/spring-integration-2.0.xsd
+                           http://www.springframework.org/schema/integration/jms 
+                           http://www.springframework.org/schema/integration/jms/spring-integration-jms.xsd
+                           http://activemq.apache.org/schema/core 
+                           http://activemq.apache.org/schema/core/activemq-core.xsd">
+
+ 
+  <context:annotation-config />
+
+  <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+        p:systemPropertiesModeName="SYSTEM_PROPERTIES_MODE_OVERRIDE">
+    <property name="locations">
+      <list>
+        <value>classpath:/analysis.properties</value>
+      </list>
+    </property>
+  </bean>
+
+  <amq:queue id="CrawlerOutput" physicalName="crawler.output" />
+
+  <si-jms:message-driven-channel-adapter 
+    id="CrawlerInputEndpoint" auto-startup="${crawler.input.auto-startup}"
+    channel="InputChannel" destination="CrawlerOutput" connection-factory="jmsCF" />
+ 
+  <bean id="IndexOutputAdapter" class="org.headvances.analysis.integration.IndexOutputAdapter">
+    <property name="enable" value="${analysis.output.index}"/>
+    <property name="index"  value="${index.name}"/>
+    <property name="type"   value="${index.type}"/>
+    <property name="urls"   value="${index.url}"/>
+  </bean>
+
+  <si:outbound-channel-adapter id="IndexOuputEndpoint" channel="OutputChannel" ref="IndexOutputAdapter" method="write" />
+  
+</beans>

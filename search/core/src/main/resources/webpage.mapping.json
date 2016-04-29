@@ -1,0 +1,126 @@
+{
+  "webpage": {
+    "_source" : { "compress" : true },
+    "properties" : {
+      "tags" :    { "type" : "string", "index" : "not_analyzed", "omit_norms": true },
+      "content" : { "type" : "string", "index" : "no" },
+      "link" :    { "type" : "object", "index" : "no", "dynamic" : false },
+      "headers" : { "type" : "object", "index" : "no", "dynamic" : false },
+
+      "entities" : {
+        "type" : "object",
+        "dynamic" : false,
+        "properties" : {
+          "location"  : { "type" : "geo_point" },
+
+          "primitive"  : { "type" : "object" },
+
+          "htmlLink"  : { 
+            "type" : "object",
+            "properties" : {
+              "deep" : {"type" : "integer"},
+              "url" : {"type" : "string", "index" : "analyzed", "analyzer" : "url" }
+            }
+          },
+
+          "icontent"  : { 
+            "type" : "object",
+            "properties" : {
+              "title" : {
+                "type" : "multi_field",
+                "boost" : 3.0,
+                "fields" : {
+                  "title" :  {"type" : "string", "index" : "analyzed" },
+                  "vn" : {"type" : "string", "index" : "analyzed", "analyzer" : "vnLanguage" }
+                }
+              },
+              "description" : {
+                "type" : "multi_field",
+                "boost" : 2.0,
+                "fields" : {
+                  "description" :  {"type" : "string", "index" : "analyzed" },
+                  "vn" : {"type" : "string", "index" : "analyzed", "analyzer" : "vnLanguage" }
+                }
+              },
+              "content" : {
+                "type" : "multi_field",
+                "fields" : {
+                  "content" :  {"type" : "string", "index" : "analyzed" },
+                  "vn" : {"type" : "string", "index" : "analyzed", "analyzer" : "vnLanguage" }
+                }
+              }
+            }
+          },
+
+          "mainContent"  : { 
+            "type" : "object",
+            "properties" : {
+              "title" : {
+                "type" : "multi_field",
+                "boost" : 3.0,
+                "fields" : {
+                  "title" :  {"type" : "string", "index" : "analyzed" },
+                  "vn" : {"type" : "string", "index" : "analyzed", "analyzer" : "vnLanguage" }
+                }
+              },
+              "description" : {
+                "type" : "multi_field",
+                "boost" : 2.0,
+                "fields" : {
+                  "description" :  {"type" : "string", "index" : "analyzed" },
+                  "vn" : {"type" : "string", "index" : "analyzed", "analyzer" : "vnLanguage" }
+                }
+              },
+              "content" : {
+                "type" : "multi_field",
+                "fields" : {
+                  "content" :  {"type" : "string", "index" : "analyzed" },
+                  "vn" : {"type" : "string", "index" : "analyzed", "analyzer" : "vnLanguage" }
+                }
+              }
+            }
+          },
+
+          "comment"  : { 
+            "type" : "object",
+            "properties" : {
+              "title" : {
+                "type" : "multi_field",
+                "boost" : 3.0,
+                "fields" : {
+                  "title" :  {"type" : "string", "index" : "analyzed" },
+                  "vn" : {"type" : "string", "index" : "analyzed", "analyzer" : "vnLanguage" }
+                }
+              },
+              "description" : {
+                "type" : "multi_field",
+                "boost" : 2.0,
+                "fields" : {
+                  "description" :  {"type" : "string", "index" : "analyzed" },
+                  "vn" : {"type" : "string", "index" : "analyzed", "analyzer" : "vnLanguage" }
+                }
+              },
+              "content" : {
+                "type" : "multi_field",
+                "fields" : {
+                  "content" :  {"type" : "string", "index" : "analyzed" },
+                  "vn" : {"type" : "string", "index" : "analyzed", "analyzer" : "vnLanguage" }
+                }
+              }
+            }
+          },
+
+          "contact"  : { 
+            "type" : "object",
+            "properties" : {
+              "phone" : {"type" : "string", "index" : "analyzed", "analyzer" : "phoneNumber" }
+            }
+          },
+
+          "product"  : { "type" : "object" }
+        }
+      }
+
+    }
+  }
+}

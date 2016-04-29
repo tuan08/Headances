@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<assembly>
+  <id>release</id>
+  <formats>
+    <format>dir</format>
+    <!--
+    <format>tar.gz</format>
+    <format>zip</format>
+    -->
+  </formats>
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>lib</outputDirectory>
+      <includes>
+        <include>org.headvances:headvances.lib.common</include>
+        <include>org.headvances:headvances.lib.xhtml</include>
+        <include>org.headvances:headvances.lib.jms</include>
+        <include>org.headvances:headvances.lib.swingui</include>
+        <include>org.headvances:headvances.lib.cluster</include>
+        <include>org.headvances:headvances.crawler.core</include>
+        <include>org.headvances:headvances.storage.hadoop</include>
+
+
+        <include>dk.brics.automaton:automaton</include>
+        <include>org.codehaus.jackson:jackson-core-asl</include>
+        <include>org.codehaus.jackson:jackson-mapper-asl</include>
+
+        <include>org.headvances:headvances.lib.jsoup</include>
+        <!--
+        <include>org.jsoup:jsoup</include>
+        -->
+        <include>net.sourceforge.htmlcleaner:htmlcleaner</include>
+        <include>net.sourceforge.nekohtml:nekohtml</include>
+        <include>xerces:xercesImpl</include>
+        <include>commons-cli:commons-cli</include>
+        <include>commons-codec:commons-codec</include>
+
+        <include>org.springframework:spring-core</include>
+        <include>org.springframework:spring-asm</include>
+        <include>org.springframework:spring-expression</include>
+        <include>org.springframework:spring-beans</include>
+        <include>org.springframework:spring-context</include>
+
+        <include>org.springframework:org.springframework.context.support</include>
+        <include>org.springframework:org.springframework.transaction</include>
+        <include>org.springframework:org.springframework.jms</include>
+        <include>org.springframework:org.springframework.aop</include>
+
+        <include>org.springframework.integration:spring-integration-core</include>
+        <include>org.springframework.integration:spring-integration-jms</include>
+
+        <include>org.springframework.integration:spring-integration-jmx</include>
+
+        <include>aopalliance:aopalliance</include>
+
+
+        <include>org.apache.activemq:activemq-core</include>
+        <include>org.apache.activemq:kahadb</include>
+        <include>org.apache.activemq:activeio-core</include>
+        <include>org.apache.activemq:com.springsource.org.apache.activemq</include>
+        <include>org.apache.geronimo.specs:geronimo-jms_1.1_spec</include>
+        <include>org.apache.geronimo.specs:geronimo-jta_1.1_spec</include>
+        <include>org.apache.geronimo.specs:geronimo-j2ee-management_1.1_spec</include>
+        <include>org.apache.xbean:com.springsource.org.apache.xbean.spring</include>
+        <include>javax.jms:com.springsource.javax.jms</include>
+
+        <include>com.hazelcast:hazelcast</include>
+        <include>com.hazelcast:hazelcast-client</include>
+        <include>com.hazelcast:hazelcast-spring</include>
+
+
+        <include>org.apache.hadoop:hadoop-core</include>
+        <include>org.apache.hadoop:hadoop-gpl-compression</include>
+        <include>org.apache.httpcomponents:httpcore</include>
+        <include>org.apache.httpcomponents:httpclient</include>
+
+        <include>net.sourceforge.cpdetector:cpdetector</include>
+        <include>net.sourceforge.jchardet:jchardet</include>
+
+        <include>ant:ant</include>
+        <include>antlr:antlr</include>
+
+
+        <include>org.slf4j:slf4j-api</include>
+        <include>org.slf4j:slf4j-simple</include>
+        <include>org.slf4j:jcl-over-slf4j</include>
+        <include>org.slf4j:log4j-over-slf4j</include>
+      </includes>
+    </dependencySet>
+  </dependencySets>
+
+  <fileSets>
+    <fileSet>
+      <directory>src/app</directory>
+      <outputDirectory></outputDirectory>
+      <includes>
+        <include>**/*</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</assembly>

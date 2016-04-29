@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+        xmlns:si="http://www.springframework.org/schema/integration"
+       xmlns:si-jms="http://www.springframework.org/schema/integration/jms"
+       xmlns:amq="http://activemq.apache.org/schema/core"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context-3.0.xsd
+                           http://www.springframework.org/schema/jms 
+                           http://www.springframework.org/schema/jms/spring-jms-3.0.xsd
+                           http://www.springframework.org/schema/integration
+                           http://www.springframework.org/schema/integration/spring-integration-2.0.xsd
+                           http://www.springframework.org/schema/integration/jms 
+                           http://www.springframework.org/schema/integration/jms/spring-integration-jms.xsd
+                           http://activemq.apache.org/schema/core 
+                           http://activemq.apache.org/schema/core/activemq-core.xsd">
+
+ 
+  <context:annotation-config/>
+  <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+
+  <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+        p:systemPropertiesModeName="SYSTEM_PROPERTIES_MODE_OVERRIDE">
+    <property name="locations">
+      <list>
+        <value>classpath:/crawler.properties</value>
+      </list>
+    </property>
+  </bean>
+
+
+
+  <amq:queue id="XHTMLOutputQueue" physicalName="crawler.output" />
+  <!--
+  <si:publish-subscribe-channel id="OutputChannel" />
+  <si-jms:outbound-channel-adapter id="AnalysisJMSOutput" channel="OutputChannel" destination="XHTMLOutputQueue" connection-factory="jmsCF" />
+  <si:gateway id="XHTMLDataGateway" service-interface="org.headvances.crawler.channel.ChannelGateway" default-request-channel="OutputChannel"/>
+  -->
+  <bean id="XHTMLDataGateway" class="org.headvances.crawler.channel.JMSChannelGateway">
+    <property name="destination" ref="XHTMLOutputQueue" />
+    <property name="jmsTemplate">
+      <bean class="org.springframework.jms.core.JmsTemplate" p:connectionFactory-ref="jmsCF">
+        <property name="deliveryPersistent" value="${crawler.jms.delivery.persistent}"/>
+      </bean>
+    </property>
+  </bean>
+</beans>

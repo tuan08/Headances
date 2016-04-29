@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+  <head>
+    <title>Scrolling</title>
+    <style type="text/css">
+      div.content {
+        border: #000000 1px solid;
+        height: 400px;
+        overflow-y: auto;
+        width: 800px;
+      }
+
+      .fixedHeader { white-space: nowrap; }
+
+      .fixedHeader tr {
+        height: auto;
+        position: relative;
+      }
+
+      .fixedHeader tr td {
+        background-color: #778899;
+        border: #000000 1px solid;
+        text-align: center;
+      }
+
+      tbody.scrollContent {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 370px;
+      }
+
+      .scrollContent tr td {
+        background-color: #C0C0C0;
+        border: #000000 1px solid;
+        padding-right: 22px;
+        vertical-align: top;
+      }
+    </style>
+    <!--[if IE]>
+    <style type=text/css>
+      div.content 
+      {
+      overflow-x: hidden;
+      overflow-y: auto;
+      }
+    </style>
+    <![endif]-->
+  </head>
+  <body>
+    <div>
+      <div class="content">
+        <table cellspacing="0">
+          <thead class="fixedHeader">
+            <tr>
+              <td>Cell 1</td>
+              <td>Cell 2</td>
+              <td>Cell 3</td>
+              <td>Cell 4</td>
+            </tr>
+          </thead>
+          <tbody class="scrollContent">
+            <tr>
+              <td>Pages can be displayed either with or without tabs. Pages can be displayed either with or without tabs. Pages can be displayed either with or without tabs.  Pages can be displayed either with or without tabs. Pages with tabs are preferred for a standard user interface, and pages without tabs are preferred for a wizard. If tabs are omitted, you must provide a way of moving through the pages. For instance, Back and Next buttons can be implemented. Pages can be displayed either with or without tabs. Pages with tabs are preferred for a standard user interface, and pages without tabs are preferred for a wizard. If tabs are omitted, you must provide a way of moving through the pages. For instance, Back and Next buttons can be implemented. Pages can be displayed either with or without tabs. Pages with tabs are preferred for a standard user interface, and pages without tabs are preferred for a wizard. If tabs are omitted, you must provide a way of moving through the pages. For instance, Back and Next buttons can be implemented.</td>
+              <td>Pages can be displayed either with or without tabs. Pages can be displayed either with or without tabs. </td>
+              <td>Pages can be displayed either with or without tabs. </td>
+              <td>Pages can be displayed either with or without tabs. Pages can be displayed either with or without tabs. Pages can be displayed either with or without tabs.  Pages can be displayed either with or without tabs. Pages with tabs are preferred for a standard user interface, and pages without tabs are preferred for a wizard. If tabs are omitted, you must provide a way of moving through the pages. For instance, Back and Next buttons can be implemented. Pages can be displayed either with or without tabs. Pages with tabs are preferred for a standard user interface, and pages without tabs are preferred for a wizard. If tabs are omitted, you must provide a way of moving through the pages. For instance, Back and Next buttons can be implemented. Pages can be displayed either with or without tabs. Pages with tabs are preferred for a standard user interface, and pages without tabs are preferred for a wizard. If tabs are omitted, you must provide a way of moving through the pages. For instance, Back and Next buttons can be implemented.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>            
+  </body>
+</html>

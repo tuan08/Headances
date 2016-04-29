@@ -1,0 +1,176 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <parent>
+    <groupId>org.headvances</groupId>
+    <artifactId>config</artifactId>
+    <version>1.0</version>
+  </parent> 
+
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>headvances.crawler.core</artifactId>
+  <version>${org.headvances.version}</version>
+  <name>Headvances :: Crawler</name>
+  <description>XHTML Crawler</description>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.headvances</groupId>
+      <artifactId>headvances.lib.xhtml</artifactId>
+      <version>${org.headvances.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.headvances</groupId>
+      <artifactId>headvances.lib.jms</artifactId>
+      <version>${org.headvances.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.headvances</groupId>
+      <artifactId>headvances.lib.cluster</artifactId>
+      <version>${org.headvances.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.headvances</groupId>
+      <artifactId>headvances.storage.hadoop</artifactId>
+      <version>${org.headvances.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${org.springframework.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>${org.springframework.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.integration</groupId>
+      <artifactId>spring-integration-core</artifactId>
+      <version>${org.springframework.integration.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.integration</groupId>
+      <artifactId>spring-integration-jms</artifactId>
+      <version>${org.springframework.integration.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.integration</groupId>
+      <artifactId>spring-integration-jmx</artifactId>
+      <version>${org.springframework.integration.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>activemq-core</artifactId>
+      <version>${org.apache.activemq.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>kahadb</artifactId>
+      <version>${org.apache.activemq.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-core</artifactId>
+      <version>cdh3</version>
+      <exclusions>
+        <exclusion><groupId>org.mortbay.jetty</groupId><artifactId>jetty</artifactId></exclusion>
+        <exclusion><groupId>tomcat</groupId><artifactId>jasper-compiler</artifactId></exclusion>
+        <exclusion><groupId>tomcat</groupId><artifactId>jasper-runtime</artifactId></exclusion>
+        <exclusion><groupId>org.eclipse.jdt</groupId><artifactId>core</artifactId></exclusion>
+      </exclusions>
+      <optional>true</optional>
+    </dependency>
+
+    <dependency>
+      <groupId>net.sourceforge.cpdetector</groupId>
+      <artifactId>cpdetector</artifactId>
+      <version>1.0.8</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.1.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${org.slf4j.version}</version>
+      <optional>true</optional>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>${org.slf4j.version}</version>
+      <optional>true</optional>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>jcl-over-slf4j</artifactId>
+      <version>${org.slf4j.version}</version>
+      <optional>true</optional>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>log4j-over-slf4j</artifactId>
+      <version>${org.slf4j.version}</version>
+      <optional>true</optional>
+    </dependency>
+
+    <!--
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>com.springsource.slf4j.api</artifactId>
+      <version>1.6.1</version>
+      <optional>true</optional>
+    </dependency>
+    -->
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <finalName>headvances.crawler</finalName>
+          <descriptors>
+            <descriptor>src/assembly/assembly.xml</descriptor>
+          </descriptors>
+        </configuration>
+      </plugin>
+
+      <!--
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <argLine>-agentpath:"d:\java\yjp\bin\win64\yjpagent.dll"</argLine>
+        </configuration>
+      </plugin>
+      -->
+    </plugins>
+  </build>
+</project>

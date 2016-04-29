@@ -1,0 +1,264 @@
+p:1	t:0	PRODUCT có hai phiên bản : PRODUCT Wifi và PRODUCT Wi-fi+3G cùng mỏng 0.5 inch .
+p:0	t:1	PRODUCT đặc biệt được chú ý lần này bởi nó mang trong mình tính năng đặc biệt như một cuốn sách điện tử .
+p:1	t:0	PRODUCT đẹp long lanh là thế mà sao lại bị " tra tấn " dã man như kia ...
+p:0	t:-1	PRODUCT siêu đắt của Stuart Hughes- Ảnh : Bornrich
+p:0	t:1	PRODUCT tốt giá rẻ .
+p:1	t:0	PRODUCT = đẹp + tính năng nghèo nàn + khả năng mở rộng kém + đắt
+p:1	t:0	PRODUCT 3Gs 16GB World : đầy đủ hộp , cable , sạc , tai nghe .
+p:0	t:-1	PRODUCT 3GS xoay màn hình chậm hơn Zune HD
+p:0	t:1	PRODUCT 4 - smartphone mỏng nhất thế giới
+p:0	t:1	PRODUCT có thể là cứu cánh cho PRODUCT thường trong các trường hợp cần thiết .
+p:1	t:0	PRODUCT của em cũng đầy đủ chức năng rồi nên chỉ cần mua 1 chiếc đen trắng thông thường nghe gọi thôi ạ
+p:0	t:1	PRODUCT đã có mật độ hợp lý ở mức 163 PPI ( điểm ảnh/inch ) , cao hơn cả PRODUCT ( 113PPI ) hay iMac ( 108 PPI ) .
+p:-1	t:0	PRODUCT đắt nhất thế giới .
+p:-1	t:0	PRODUCT giá rẻ - giấc mơ viển vông …
+p:1	t:0	PRODUCT là cô gái đẹp nhưng kiêu kì , khó vừa lòng được nhưng lại chưa hoàn hảo .
+p:1	t:-1	PRODUCT thì chỉ được cái bóng bẩy phù hợp với mấy ku khoe mấy cái ảnh , mấy cái phim thôi .
+p:0	t:1	Ké LCD PRODUCT 18,5in < --- cũng ngon ko kém :D
+p:0	t:1	Kết quả là mình cũng được đổi mới 1 ổ PRODUCT khác , quay đĩa ngon lành :D
+p:0	t:1	Khác 1 điều là PRODUCT vẫn rẻ hơn AMD với người dùng phổ thông , ít nhất là với tớ , dân coding , không biết chơi game :byebye :
+p:1	t:-1	Khác với những chiếc Aspire hay TravelMate nặng và thô của PRODUCT , Timeline 4810T mỏng và nhẹ .
+p:1	t:0	Khi xu hướng sử dụng màn hình chuẩn 16:9 hình thành thì PRODUCT 510 cũng nhanh chóng gia nhập vào dòng máy tính theo tiêu chuẩn này .
+p:0	t:-1	Khó có thể kỳ vọng PRODUCT sẽ có giá rẻ vì giá của nó sẽ bằng giá mua tại Mỹ cộng với chi phí nhập khẩu .
+p:1	t:0	Không cần mua các thương hiệu nổi tiếng mà chỉ cần mua mác của Hàn Quốc , nhưng làm gia công cho PRODUCT hay LG cũng hoành tráng lắm rồi .
+p:0	t:-1	Không có chuyện mua PRODUCT với giá rẻ đâu .
+p:0	t:-1	Không phải 1-2n mà hàng chục năm nay doanh số Laptop PRODUCT vẫn lèo bèo .
+p:1	t:0	Không rõ là PRODUCT có bao nhiêu nhà cung cấp màn hình cho PRODUCT , nhưng LG thì chắc chắn là " ông kẹ " trong số đó .
+p:1	t:0	Khuyến mại cặp PRODUCT cực đẹp + phần mềm diệt virus Kaspersky
+p:-1	t:0	Ko bít giờ PRODUCT hay amd nóng nữa T_T .
+p:1	t:0	Ko phải mình chê gì PRODUCT ,nhưng bạn bảo nó đẹp hơn HP thì quả là ...
+p:0	t:1	Làm quả PRODUCT 8310 hay 8250 cho rẻ , số tiền còn lại để vào việc khác .
+p:0	t:1	Laptop PRODUCT ổn định nhất tại Mỹ
+p:0	t:1	laptop PRODUCT U30jc dc đánh giá cao về công nghệ , máy đẹp , chạy nhanh , hình thức vỏ hợp kim , pin châu .
+p:1	t:-1	Laptop của PRODUCT có giá cao hơn netbook
+p:0	t:1	Lấy cảm hứng từ nghệ thuật gấp giấy nổi tiếng Nhật Bản , 3 ý tưởng laptop của PRODUCT có thể gập dễ dàng .
+p:1	t:0	LCD PRODUCT 19 inh - MB19TU ngon lành BH ~ 1 năm SPC đầy đủ giấy tờ full box __ 2000k
+p:1	t:0	LCD PRODUCT 17 " vuông đẹp
+p:1	t:0	lên thì lên con 2 số của PRODUCT là đẹp theo ...cảm nhận của mình thì nikon đời mới khử noise tốt nhưng mà nó làm mất cảm giác 3D của vật ...
+p:1	t:0	Liệu có xuất hiện sự đối đầu mới những PRODUCT và gã khổng lồ PRODUCT trong tương lai hay không ?
+p:1	t:-1	loa nghe chán là rõ . con PRODUCT dưới sign loa nghe chán rứa !
+p:1	t:0	Logo PRODUCT ánh kim to và nổi bật ngay phía dưới màn hình .
+p:1	t:0	Logo PRODUCT nổi bật trên lớp vỏ màu hồng .
+p:1	t:0	Lý do không chấp nhận iDroid vì đó “ chỉ là sản phẩm để quảng cáo cho Droid ” được PRODUCT đưa ra là hoàn toàn dễ hiểu .
+p:0	t:-1	Mà màn hình PRODUCT đắt lắm tận 200$ cơ .
+p:-1	t:1	Mà thằng PRODUCT nhanh xuống giá lắm , cứ từ từ :D
+p:1	t:-1	Mặc dù bạn có thể tìm được PRODUCT Rebel XT với giá rẻ hơn nhưng người tiêu dùng không ưa chuộng bởi Rebel XT đã lỗi thời .
+p:1	t:0	Mặc dù đã trét đi trét lại keo đồng 20k với HSF DF của PRODUCT lõi đồng nặng trịch rồi mà em nó vẫn thế :brick: .
+p:1	t:0	Mặc dù tốc độ của i7 930 không cao hơn so với i7 920 ( 2.66Ghz ) là mấy nhưng dòng vi xử lý mới này cũng được PRODUCT kết đối với chipset cao cấp X58 .
+p:1	t:0	PRODUCT cũng chỉ đẹp chứ có nhanh hơn thinkpad wé đâu mà giá vẫn đắt hơn :D
+p:1	t:0	PRODUCT Pro đặc biệt này của PRODUCT với lớp vỏ bằng vàng .
+p:1	t:0	PRODUCT Pro siêu mỏng .
+p:1	t:0	-Main 945 SK775 on all tháo máy đồng bộ PRODUCT đầy đủ chặn main
+p:0	t:-1	Main PRODUCT đúng là bị mấy cái vụ đó ;
+p:0	t:-1	main giảm xuống đi main PRODUCT giá cao quá...wa MSI hay ECS cũng rẽ được vài trăm . ( xuống G31 cũng được vì có VGA onboard rồi )
+p:0	t:1	Main PRODUCT ( Ko nhớ rõ tên nhưng hồi mua cũng thuôc loại khá )
+p:-1	t:1	Main PRODUCT chip PRODUCT 945GZME hơi ngon thời đó khi chạy với con Pen D
+p:0	t:1	main PRODUCT bền vô đối...có ng còn đang nghĩ cách phá cho nó hỏng sớm kìa = ) http://www.laymark.biz/i/m/m066.gif ( http://www.laymark.com )
+p:-1	t:0	Main PRODUCT dg31pr quá nóng ?
+p:0	t:1	Main PRODUCT về độ ổn định thì vô tư đi các bác ơi,không phải lo lắng gì nhiều đâu .
+p:1	t:0	Màn PRODUCT kiểu dáng đẹp .
+p:0	t:1	Màn hình cảm ứng 3.1 inch AMOLED của PRODUCT Jet khá nhạy .
+p:0	t:1	Màn hình CRT 17 " PRODUCT ảnh đẹp , ko lõi lầm gì hết
+p:1	t:0	Màn hình LCD 17 " PRODUCT ảnh đẹp , ko lỗi lầm , 1tr4
+p:1	t:0	Mang sang box PRODUCT hợp lý hơn:shot :
+p:0	t:1	Mẫu PRODUCT rẻ nhất , có thể kết nối Wifi với bộ nhớ 16GB có giá 500 USD .
+p:1	t:0	Màu trắng PRODUCT cực đẹp ( vừa hết màu trắng bạn nhé )
+p:0	t:-1	Máy PRODUCT cũ thiết kế + chất liệu vỏ dở nên nóng cực kì .
+p:-1	t:0	Máy Ảnh PRODUCT dòng PowerShot A710 IS bị hư ống len rồi các bạn ơi!! !
+p:0	t:1	Máy ảnh thông minh Powershot và IXUS của PRODUCT hơn cả sự chuyên nghiệp
+p:1	t:0	Máy bay sẽ sử dụng PRODUCT thay cho hệ thống giải trí cũ
+p:-1	t:0	Mấy bồ nên xem lại đi , tuy hàng PRODUCT và GIGA có mắc nhưng chất lượng cực tốt .
+p:-1	t:1	Mấy dòng PRODUCT đặt tên dễ nhớ+ hay phết
+p:1	t:0	Mấy dòng PRODUCT vaio cao cấp cỡ S,Z hình như cũng có
+p:-1	t:1	Máy ghi âm PRODUCT ICD PX312 2GB ghi âm chuyên nghiệp chất lượng cao , mẫu mã đẹp , hỗ trợ khe cắm thẻ nhớ mở rộng giúp bạn dễ dàng mở rộng bộ nhớ. ...
+p:0	t:1	Máy in của PRODUCT còn nổi bật với tính năng in , sao chụp hay quét hai mặt với cơ chế lật mặt tự động khá chuyên nghiệp ( giúp tiết kiệm giấy ) .
+p:-1	t:0	Máy in Laser PRODUCT New Model 3300 + Tốc độ cao : 21 trang/phút + In 2 mặt cùng lúc + 2400x600 Dpi + Công nghệ nén Hi-SCoA + In không cần khởi động máy .
+p:0	t:1	Máy nặng đến hơn 1,5kg trong khi PRODUCT chỉ nặng có 680g .
+p:0	t:1	Máy quay phim bỏ túi bloggie 2010 của PRODUCT nhỏ gọn như một chiếc smartphone , dành riêng cho giới trẻ .
+p:0	t:1	Máy quay PRODUCT dùng ống kính Carl Zeiss cao cấp nên có phần vượt trội về chất lượng hình ảnh và chống lóe nắng khá tốt .
+p:-1	t:1	Máy tính bảng chạy Android hay các model laptop sử dụng thế hệ vi xử lý mới của PRODUCT là những điểm nổi bật trong ngày đầu khai mạc Computex 2010 . > Xu hướng công nghệ tại Computex 2010
+p:1	t:0	Me pesu đang tính mua di động.Nghe mọi người nói PRODUCT Ericsson x10 mini pro tốt lắm ?
+p:-1	t:0	Mẹo xử lý PRODUCT bị hư
+p:1	t:0	Minh chuan bi nang cap len LCD co cai man PRODUCT 793DF con ngon ban 400k
+p:0	t:1	Mình cũng mới làm con PRODUCT ATI 5570 2.1tr chạy mát , ít tốn điện lắm !
+p:1	t:0	mình đang dùng LCD của LG PHILIP . bây giờ bị giật dưới thanh start . mình thấy hãng PRODUCT xài bền hơn thì phải ?
+p:1	t:0	Mình đang phân vân không biết chọn PRODUCT ( rõ nguồn gốc ) hay Crusial ( xách tay ) ?
+p:1	t:0	Mình mua ổn định df nên chọn em PRODUCT nào rẻ thôi chứ khônng ham hố oc : )
+p:1	t:0	Mình nói dựa trên thục tế bác và nội dung xoay quanh việc bác chủ thớt hỏi studio của Dell và EB PRODUCT cái nào bền hơn .
+p:1	t:0	Model : PRODUCT Vaio VPC-W125AG màu nâu lịch lãm .
+p:1	t:0	Model trên PC World với icon của hệ điều hành PRODUCT với bàn phím ảo nhỏ .
+p:0	t:-1	mới mua PRODUCT 8 cổng giá có cao hơn nhưng mới dùng chưa rõ đủ hết cá cổng không nữa...chờ kiểm nghiệm rồi báo lại sau ...
+p:0	t:1	Mới nhất của PRODUCT với độ phân giải cực cao lên tới 16 chấm ( 16.1 megapixels ) !! !
+p:-1	t:0	Mỗi tội PRODUCT nên cái gì cũng cao nhưng chất lượng thì ẹ .
+p:1	t:0	Mỏng hơn cả mẫu 55B8500 , PRODUCT UN46B6000 có độ dày chỉ 30 mm .
+p:1	t:0	monitor PRODUCT 15in lên rất đẹp còn sạch sẽ giá 300k
+p:0	t:1	Một chiếc điện thoại ra lò từ PRODUCT là sự đảm bảo chắc chắn cho bất kì nghi ngờ nào về chất lượng , kiểu dáng , hay sự mới lạ .
+p:-1	t:0	Một chuyên gia về giá khẳng định , việc kinh doanh PRODUCT không phải dễ ăn .
+p:0	t:1	Một điểm cải tiến khiến PRODUCT 13 " nổi bật hơn so với hai dòng 15 " và 17 " đó là thời lượng sử dụng pin đã được cải thiện đáng kể .
+p:1	t:0	Một điểm nổi bật khác là PRODUCT sử dụng bộ vi xử lý PRODUCT Atom N280 thay vì N270 cho 1000HE .
+p:1	t:0	một loạt tính năng bảo đảm an toàn dữ liệu như quét vân tay AI Pre-boo Finger logon , công nghệ chống trộm Anti-Theft của PRODUCT và xoá dữ liệu an toàn AI Secure Delete .
+p:0	t:-1	Một vài người cho biết khả năng bắt sóng WiFi của PRODUCT rất yếu , khi ở cùng 1 vị trí thì PRODUCT bắt sóng mạnh hơn nhiều .
+p:1	t:0	mua con 3210C của PRODUCT mới ra đấy , đầy đủ tính năng hiện đại mà giá lại mềm nữa 2tr2 :dreaming :
+p:1	t:0	Mua PRODUCT nhiều khi mạnh thiệt đó nhưng mắc , có xài tới đâu ?
+p:1	t:-1	Mua PRODUCT thì coá 1 ngày đẹp giời nào đó mất sạch data lun ấy chứ :D
+p:1	t:0	Mục đích của Hội thi Khoa học Kỹ thuật Quốc tế của PRODUCT nhằm nâng cao việc công nhận những ứng dụng học thuật và nghiên cứu của thế hệ trẻ trên toàn cầu .
+p:1	t:0	Mún OC thì nên mua Giga hoặc PRODUCT còn dùng Bio thì nóng lắm , OC cũng chỉ được chút ít thôi
+p:1	t:0	Năm 1985 , Jorma chuyển từ Citibank sang PRODUCT đúng lúc tập đoàn này cần phải “ thay máu ” .
+p:1	t:0	Nền tảng Pine Trail mới của PRODUCT đang là chủ đề " nóng " trên phân khúc netbook .
+p:1	t:0	Netbook PRODUCT N150 siêu mỏng
+p:0	t:-1	Nếu PRODUCT mà cũng rẻ như Giga nà tớ mua liền đấy :shame : :lol :
+p:1	t:0	Nếu chọn PRODUCT thì coi chừng cái đế , nhiều người nói màn hình PRODUCT dễ đổ.:go :
+p:1	t:0	Nếu có được sự " hậu thuẫn " của PRODUCT , Google Chromes OS sẽ nhanh chóng đến tay người dùng .
+p:1	t:-1	Nếu lấy Vga rời thì nên dùng Chip P31 của PRODUCT nhé bạn giá mắc hơn tí,HDD thêm 50k là đc cái 250GB rồi tại sao không lấy chứ : ) .
+p:1	t:0	nếu mà có cấu hình PRODUCT nào ngon là múc ngay !! !
+p:0	t:-1	Nếu như PRODUCT không nhanh chóng đưa ra những biện pháp khắc phục kịp thời thì sẽ phải gánh chịu những hậu quả nghiêm trọng hơn rất nhiều .
+p:0	t:-1	nghe giang hồ đồn là em PRODUCT này chạy nóng lắm , bác chủ thớt cho thêm thông tin nhiệt độ hệ thống trong đó có cả nhiệt độ phòng .
+p:0	t:-1	Nghe nói thì laptop PRODUCT dễ bị hư hỏng tùm lum,nói chung là ko bền
+p:0	t:1	Nghe với đt PRODUCT rất hợp , ko cần phải mua tai Creative đâu
+p:0	t:1	Ngoài 4 màu sắc sẵn có của PRODUCT Walkman S series , máy nghe nhạc của PRODUCT sẽ trở nên độc đáo và lạ mắt hơn với những mẫu vỏ bảo vệ của Ray-out .
+p:1	t:0	Ngoài ra , chiếc PRODUCT đặc biệt này còn được cất giữ trong một chiếc hộp nặng 7 kg làm từ đá granite và vàng Kashmir .
+p:1	t:0	Ngoài ra , EP121 còn nhẹ hơn và mỏng hơn máy tính bảng PRODUCT của PRODUCT với độ dày chỉ 12,2mm và trọng lượng 1,48 pound ( 675g ) .
+p:1	t:0	Ngoài ra , HP PRODUCT Presario còn có phiên bản sử dụng BXL PRODUCT Core i3 hợp lý hơn về giá trong khi vẫn đảm bảo được hiệu năng làm việc di động tốt nhất .
+p:1	t:0	Ngoài ra là PRODUCT rất bền nhưng dạo này kiểu dáng của Vaio lại không mấy ấn tượng lắm + Spec của nó nhưng độ bền là rất cao .
+p:1	t:0	Người đến mua PRODUCT thì làm thủ tục rất nhanh gọn .
+p:1	t:0	Nhận cắt các loại sim cho PRODUCT nhanh gọn , giá cả hợp lý , phục vụ tận nhà
+p:0	t:1	Nhận xét : Với bộ xử lý Atom mới và thiết kế khá ổn , PRODUCT NB300 là 1 sự nâng cấp đáng kể so với model trước đó là NB200 .
+p:0	t:1	nhẹ thì kiếm mấy em 12 " của PRODUCT mới ra ngon tầm 12 mil nặng có 2KG tính luôn pin :D
+p:0	t:1	Nhiều người thích chiếc PRODUCT đơn giản vì hệ điều hành Mac OS thật tuyệt , hay ít ra họ cũng có thể cài sang hệ điều hành Windows phổ thông và tiện dụng .
+p:0	t:1	Nhìn chung , LG GD900 và PRODUCT i8000 được đánh giá cao hơn .
+p:-1	t:0	Nhìn giá con PRODUCT thấy ngon quá nhưng ko bít có tốt ko vậy mấy bro? : ( (
+p:0	t:1	Nhờ đó các chương trình email , lịch và danh bạ của PRODUCT sẽ trở nên hữu ích hơn trong môi trường doanh nghiệp .
+p:0	t:1	PRODUCT đẹp nên tất nhiên phụ kiện đi kèm để bảo vệ vẻ ngoài của sản phẩm cũng chẳng lấy gì làm " hạt dẻ " .
+p:0	t:1	PRODUCT mỏng như 1 cuốn tạp chí và chỉ nặng bằng nửa so với những netbook 10 inch hiện nay .
+p:0	t:1	PRODUCT thực sự mỏng manh và nhẹ nhàng , chỉ nặng 0,68g và mỏng 1,25cm . PRODUCT giống như là chiếc điện thoại PRODUCT “ béo phì ” với giao diện đẹp đẽ hơn .
+p:1	t:0	PRODUCT : Rẻ mà mắc !
+p:0	t:1	PRODUCT 3G rẻ như cho
+p:0	t:1	PRODUCT 4 được PRODUCT giới thiệu là điện thoại thông minh mỏng nhất trên thế giới , với màn hình có độ phân giải cao nhất mà chưa từng được trang bị cho bất kỳ máy điện thoại nào .
+p:0	t:1	PRODUCT 4 là chiếc điện thoại cao cấp , và bởi vậy nó rất hợp để làm những phiên bản sang trọng .
+p:-1	t:0	PRODUCT có giá khởi điểm không cao nhưng chắc chắn bạn phải cam kết thời gian sử dụng , trả phí thuê bao , cước cuộc gọi và dung lượng tải dữ liệu .
+p:1	t:0	PRODUCT đã tác động mạnh đến ngành công nghiệp game di động .
+p:1	t:0	PRODUCT fake thì quá dễ để biết rồi
+p:0	t:1	PRODUCT giống như cô gái đẹp , đỏng đảnh và khó tính .
+p:0	t:1	PRODUCT là chú dế cao cấp của PRODUCT , đang rất được ưa chuộng .
+p:0	t:1	PRODUCT nếu không có nhu cầu đặc biệt thì sài tốt .
+p:-1	t:0	PRODUCT tầu khó nt là đúng ròi:beauty :
+p:-1	t:0	Kết quả là bạn đã loại được iKee ra khỏi chiếc PRODUCT của mình nhưng nên cẩn thận vì mối nguy hiểm vẫn tồn tại .
+p:0	t:1	Khi có sóng tốt , điện thoại PRODUCT E71 xem tivi khá ổn định và lướt web ngon lành ” .
+p:0	t:1	Khi đầy đủ phụ tùng , PRODUCT ST550 cũng chỉ nặng 163 gram .
+p:0	t:1	Khi nào nâng ngân sách lên 15tr thì có bộ PRODUCT ngon :sexy :
+p:-1	t:0	Khi thấy “ dế ” PRODUCT nóng lên , người dùng nên thực hiện các bước sau :
+p:0	t:1	khó tin quá , mình ko nghĩ là bọn PRODUCT làm main rẻ thế đối với con chipset như thế này
+p:1	t:0	Không biết TV LCD của PRODUCT và PRODUCT thì loại nào ngon hơn !
+p:1	t:0	Không gian của showroom PRODUCT iStore mang đậm phong cách đặc trưng của PRODUCT với tông màu chủ đạo đen – trắng mang đến cảm giác trẻ trung , hiện đại và sang trọng .
+p:0	t:1	Kiếm con 37 " PRODUCT full HD series 5 là hợp lí đấy .
+p:0	t:-1	Kiểu dáng của PRODUCT ko đẹp thì bác nên xem lại nha .
+p:1	t:-1	Ko chơi PRODUCT vì OC dỡ , PRODUCT thì ngon khỏi bàn cãi mà giá cũng đắt nữa .
+p:1	t:0	KTĐT - PRODUCT đã tác động mạnh đến ngành công nghiệp game di động .
+p:1	t:0	Kumma ( 2*2.7 ) tốc độ con này tương đương với E5200 của PRODUCT nhưng đồ họa con này ngon hơn + 300k nha
+p:0	t:-1	Laptop PRODUCT Aspire bị thu hồi do quá nóng
+p:0	t:-1	laptop PRODUCT X8AIJ nóng 77 độ
+p:1	t:0	Laptop DELL + HP + PRODUCT + PRODUCT + IBM giá siêu rẻ trước 30/4....! !
+p:0	t:1	Laptop PRODUCT SENS X05 siêu mỏng cánh :sexy :
+p:1	t:0	LCD : 18 PRODUCT còn ngon
+p:1	t:0	LCD 17wide PRODUCT ảnh đẹp ko điểm chết 1tr55
+p:1	t:0	LCD 24 " PRODUCT MODEL 2433BW HÀNG SIÊU ĐẸP !
+p:1	t:0	LCD PRODUCT giá rẻ
+p:-1	t:1	Lẽ ra nên mua PRODUCT , không lỗi , dễ nạp mực cực kỳ .
+p:1	t:0	lên phía trên cùng để PRODUCT search cho nhanh .
+p:1	t:0	LG KM900 sử dụng phím cảm ứng trong khi PRODUCT S8000 sử dụng phím mềm
+p:1	t:0	Loa kiêm chức năng sạc cho PRODUCT Ipod giảm giá mạnh tại SVhouse
+p:1	t:0	Loại này trc đây anan đã thấy quảng cáo Mainboard PRODUCT cao cấp dùng tụ này ( jetway bắt chước rồi !
+p:0	t:1	Logo PRODUCT nổi bật ở mặt trên của máy
+p:0	t:-1	Lớp vỏ nhựa , dễ xước khiến bạn phải sử dụng PRODUCT cẩn thận như nâng trứng .
+p:1	t:0	Lúc này do thấy có người đi xe máy phía sau sắp đến nên chúng chỉ kịp cướp chiếc ĐTDĐ hiệu PRODUCT 6300 rồi nhanh chân tẩu thoát .
+p:0	t:-1	Lưu ý là mình thấy pin của mấy model PRODUCT ( cả mới và cũ ) không được bền cho lắm .
+p:0	t:-1	Lý do thu hồi lượng lớn 69.000 AC adapter số hiệu PRODUCT VGP-AC19V17 là để bảo đảm an toàn cho người sử dụng .
+p:1	t:0	Mà pin đó thì tầm tiền của bác hơi khó :- < Bác tham khảo dòng netbook có khe cắm 3G của PRODUCT thì may ra có hàng ngon .
+p:1	t:-1	Mà thiết kế kiểu dáng của PRODUCT có bao giờ đẹp đâu ...
+p:0	t:1	PRODUCT Air nơi mỏng nhất chỉ 0,4 cm .
+p:0	t:1	PRODUCT cao giá nhờ tiền thương hiệu & OS độc và tất nhiên là đẹp ^^
+p:0	t:1	PRODUCT đẹp " mê ly " nhưng không phải lúc nào cũng làm bạn hài lòng
+p:0	t:1	PRODUCT màu sắc phái đẹp dành riêng
+p:0	t:1	PRODUCT mới cũng nhẹ hơn phiên bản cũ , chỉ còn nặng 4,7lbs ( 2,1kg ) so với 5,1lbs .
+p:1	t:-1	PRODUCT Pro 13 ko ngon hơn em này sao :-s
+p:0	t:1	PRODUCT Pro chỉ dày khoảng 2,41cm trong khi PRODUCT dày hơn chút ít ( 2,75cm ) .
+p:0	t:1	PRODUCT Unibody thế hệ mới đẹp kinh khủng giá hàng Brandnew nguyên seal có 1129$ thoi
+p:1	t:0	-Main 845 SK 478 on all tháo máy đồng bộ PRODUCT đầy đủ chặn main
+p:0	t:-1	main PRODUCT P5l-Mx Khởi động siêu chậm
+p:0	t:1	Main Boad PRODUCT 845 Tich hợp đầy đủ tất cả cart mang lan , cart Sound , VGA
+p:0	t:1	Main của AMD và PRODUCT thì AMD luôn rẻ hơn nhiều
+p:0	t:1	Main Giga bà PRODUCT đều dùng socket RAM của PRODUCT nên độ bền của nó tui nghĩ phải tương đương nhau
+p:0	t:-1	Main PRODUCT 8I945GMF boot USB rất chậm .
+p:0	t:1	Main PRODUCT thì rẻ nhất trong 3 thằng , có nhiều công nghệ , tốt .
+p:0	t:1	Main lấy PRODUCT hay ECS G31 cho rẻ , ổ cứng Seagate 320-500GB , nguồn CM Elite 350W , DVD-RW Lite-on .
+p:0	t:1	Main này lúc mua có luôn cả đĩa driver riêng cho Vista mà , PRODUCT các đời cao cấp bây giờ hầu như đều có cả chứ ko riêng gì Commando .
+p:1	t:0	Main thì em phân vân giữa Abit và PRODUCT ( Em nghe nói main Abit dùng tốt rẻ mà chưa dùng bao giờ . )
+p:1	t:0	Mainboard PRODUCT KM400 , đầy đủ đồ chơi , có cả AGP lẫn VGA onboard .
+p:1	t:0	Màn PRODUCT hay PRODUCT chất lượng hơn nhỉ , thấy PRODUCT giá rẻ hơn .
+p:1	t:0	Màn của HD2 cũng là diện dung , đa điểm giống ip nên bác tìm hiểu lại nhé . iCon của PRODUCT nó to và đơn giản ...
+p:0	t:1	Màn hình hiển thị của PRODUCT được trang bị giao diện TouchWiz Sweep của PRODUCT giúp người dùng lựa chọn dễ dàng các bản nhạc phát .
+p:1	t:0	Màn hình LCD PRODUCT 32 inch chuẩn HD
+p:0	t:1	Màn hình sắc nét giúp việc đọc sách báo trên PRODUCT dễ dàng hơn .
+p:0	t:-1	Mẫu PRODUCT có 3G sẽ nặng hơn mẫu thường khoảng 50 gr .
+p:0	t:1	Mẫu laptop PRODUCT rẻ nhất trên thị trường hiện nay có giá 949 USD ( PRODUCT trắng ) .
+p:0	t:1	Mẫu máy thứ 3 là PRODUCT Aspire 5538 thiết kế nổi bật với màu nâu đồng giống như dòng máy PRODUCT Timeline mỏng , nhẹ ra đã mắt trước đây .
+p:1	t:0	Mẫu notebook Vaio P Series Lifestyle màu hồng xinh xắn này của PRODUCT được đám đông đặc biệt yêu thích .
+p:0	t:-1	Máy PRODUCT cũ thì nóng vô đối rồi .
+p:0	t:1	Máy PRODUCT và PRODUCT chụp đẹp nên nó thường giữ giá hơn các loại máy kia .
+p:1	t:0	Máy chỉ dày hơn vài mm so với PRODUCT Air ( Mỹ ) và mỏng hơn nhiều so với các netbook khác .
+p:1	t:0	Máy chiếu K11 Pico của PRODUCT có kích thước 122x116mm , nặng 610g .
+p:1	t:0	Máy cỏ chống cháy của PRODUCT thì cũng rẻ hơn chút chứ bao nhiêu .
+p:1	t:0	Máy không up được rockbox bên đang xài tạm thèng PRODUCT lossless ,không rõ chuẩn này so với flac sao nữa :shot :
+p:1	t:0	máy mình đúng theo bộ , PRODUCT PRESARIO SR2150NX , cũng được 2 năm rồi .
+p:1	t:0	Mấy ông PRODUCT chắc chắn nhầm rồi :P
+p:0	t:1	Máy quay số Handycam PRODUCT đa dạng sắc màu
+p:1	t:0	Mighty Mouse Wireless - Sản phẩm quá quen thuộc của PRODUCT với đầy đủ tính năng thông minh nhất , mạnh mẽ nhất .
+p:0	t:1	mình chưa dùng PRODUCT bao giờ mới chỉ dùng PRODUCT cơ , nấu cơm ngon + bền ghê lắm
+p:1	t:0	mình có 1 con g900 của PRODUCT đó.cảm ứng ngon lành.wifi 3g đầy đủ nhé.chỉ còn máy trần và sạc.nếu bạn quan tâm pm số 0944556238 nhé
+p:1	t:0	Mình có con PRODUCT h5 nổi tiếng luôn .
+p:0	t:1	Mình đặt hi vọng vào nền tảng Bada mới của PRODUCT , Một cái giá dễ chịu và giao diện thân thiện .
+p:1	t:0	Mình dùng PRODUCT S3 được đúng 6 tháng thì bị trộm lấy mất .
+p:1	t:0	Mình là kỵ nhất ASROCK , không hiểu công ty mẹ PRODUCT nó ngon lành vậy mà đồ công ty con thì vái luôn :stick::stick :
+p:1	t:0	Mình sợ nhất khi đem máy đi sửa.trâu lành thành què . như mình bị chú PRODUCT trước đây , hư VGA sao mà làm cháy luôn nguồn .
+p:0	t:1	mình thấy cứ PRODUCT 12xx mà táng , đặc biệt là 1200 , 1202
+p:-1	t:1	Mình thấy tivi LCD của PRODUCT giờ rẻ lắm chỉ khoảng 4 triệu thôi à .
+p:0	t:1	Mình thick con PRODUCT K810i cũ .
+p:0	t:1	Mình vẫn thích hàng main PRODUCT ở chỗ : bền bỉ , ổn định , thích cái bản mạch màu xanh lá cây sẫm !
+p:0	t:1	Mỗi con có 1 sở trg riêng mà , PRODUCT thì đơn giản , nhiều dòng , phù hợp nhiều đối tượng ...
+p:1	t:-1	Mỗi tội cái giá của PRODUCT thì cao hơn các hãng khác một chút thôi .
+p:1	t:0	Monitor 21 PRODUCT ( sáng đẹp , bị vỡ 1 chút trên nóc do vận chuyển )
+p:1	t:0	mor PRODUCT 17 vuông là ngon .
+p:1	t:0	Một điểm đáng lưu ý ở các dòng TV mới là kho ứng dụng PRODUCT App của hãng với giao diện dễ sử dụng và kho tài nguyên phong phú .
+p:-1	t:0	Một lãnh đạo của Viettel tiết lộ , từ kinh nghiệm Blackberry , Viettel thấy kinh doanh PRODUCT cũng không dễ .
+p:0	t:-1	Một số chiếc PRODUCT 3G bị xước nhẹ sẽ được đánh bóng lại . ”
+p:1	t:0	Một ứng dụng mới mang tên BTstack đã được ra đời nhằm giúp PRODUCT hay iPod Touch có thể dễ dàng kết nối tới bàn phím thông qua Bluetooth .
+p:1	t:0	Một vài chuyên gia phân tích tin tưởng rằng những con chip mang thương hiệu PRODUCT là một thiết kế độc nhất và đơn giản PRODUCT sẽ sử dụng PRODUCT như một nhà chế tạo chip .
+p:1	t:0	Mouse Quang cao cấp PRODUCT giá đặc biệt : 9000VNĐ
+p:0	t:-1	Mua Hãng khác oke , bỏ ý định mua PRODUCT nếu mún dùng lâu dài > _ <
+p:0	t:1	Mua main cũ PRODUCT Giga yên tâm hơn
+p:1	t:0	Mua PRODUCT tầm Seri 6 màn hình mỏng mỏng ý bạn ạ .
+p:1	t:0	N900 là chú dế đa phương tiện thế hệ mới của PRODUCT với nhiều đặc điểm nổi bật
+p:1	t:-1	Năm nay sale quá bèo , cái PRODUCT kia cũng chẳng có ngon lành gì
+p:1	t:0	Nằm ở phân khúc giữa , series B550 của PRODUCT là lựa chọn hợp lý giữa chất hình và giá tiền cho những người yêu thích thương hiệu này .
+p:1	t:0	Nếu A700 sử dụng BXL Core i7 mạnh mẽ từ PRODUCT thì IdeaCentre B305 cũng không kém cạnh với BXL AMD Athlon II X4 lõi tứ và sử dụng card đồ họa Radeon HD 5450 .
+p:-1	t:0	Nếu bác định mua PRODUCT mà giá quá rẻ thì nên check lại cẩn thận hàng
+p:1	t:0	Nếu chọn PRODUCT , bro mua E2140 hợp lý hơn Pen D925 .
+p:0	t:1	nếu đủ kinh fí chọn PRODUCT nên dùng dòng E6xxx trở lên còn thấp hơn nên chọn AMD hiệu wả , kinh tế hơn PRODUCT ( amd mạnh hơn ) :byebye :
+p:0	t:1	Nếu được PRODUCT thì ngon hơn chút đỉnh nhưng mà dù hiệu gì thì cũng là panel TN hết .
+p:0	t:1	Nếu PRODUCT là thiết bị " hot " thì người anh em PRODUCT cũng không hề kém cạnh dù đã trải qua 3 năm tuổi .
+p:1	t:0	Nếu ko có thì mau con PRODUCT 1500 kia có ổn ko ạ? ?
+p:0	t:1	Nếu nói earbud thì theo mình chỉ cần PRODUCT E808 hay Creative EP480 là tạm ổn rồi .
+p:0	t:1	Ngay cả chiếc PRODUCT 5800 XpressMusic " giá rẻ " cũng đã có màn hình 640 x 360 .
+p:1	t:0	Nghiêm trọng hơn nữa , các chuyên gia cũng cho rằng Aplle hoàn toàn có khả năng tăng khả năng bảo mật của PRODUCT lên một cách dễ dàng nhưng hãng đã không thực hiện .
+p:1	t:0	Ngoài ra , chi phí sản xuất một chiếc PRODUCT phiên bản cao nhất sẽ nằm trong khoảng 335 USD .
+p:1	t:0	Ngoài ra , đây là model đặc biệt - là sự kết hợp của PRODUCT và hãng xe hơi nổi tiếng Ferrari .
+p:1	t:0	Ngoài ra , khả năng bảo mật trên smartphone mới của PRODUCT cũng được chú trọng đặc biệt .
+p:1	t:0	Ngoài ra , phần mềm này có giao diện mới giúp người dùng quản lý các ứng dụng của PRODUCT và iPod Touch dễ dàng hơn .
+p:1	t:0	ngon nhỉ , con PRODUCT mà rẻ tí nữa tí mua về làm cái Ipod ^^
+p:-1	t:0	Người dùng không đổi mật khẩu mặc định sau khi jailbreak PRODUCT sẽ khiến thiết bị dễ bị tấn công .
+p:0	t:-1	Nguồn : AP " Người dùng cần được cảnh báo rằng PRODUCT của họ không hoàn toàn an toàn như lời quảng cáo .
+p:0	t:-1	Nguy cơ cuối cùng mà bạn cần cảnh giác với những chiếc PRODUCT phá khóa chính là an toàn dữ liệu .
+p:1	t:0	Nguyên nhân được cho là sóng kết nối Wi-Fi của PRODUCT quá mạnh khiến cho những thiết bị không dây xung quanh bị ảnh hưởng .
+p:1	t:0	Nhầm to , card ATI gắn với CPU PRODUCT được :baffle : Hệ thống PRODUCT đã mạnh convert giờ lại mạnh hơn
+p:1	t:0	Nhân đây , teen mình tham khảo quá trình làm món sinh tố PRODUCT “ ngon lành ” cỡ nào nhé .
+p:1	t:0	Nhận thấy điều đó , PRODUCT nhanh chóng tính chuyện cải thiện sức mạnh của Vaio P thế hệ mới bằng việc ra thêm phiên bản sử dụng bộ xử lý Atom Z540 1.86 Ghz .

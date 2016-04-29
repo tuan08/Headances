@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jms="http://www.springframework.org/schema/jms"
+        xmlns:si="http://www.springframework.org/schema/integration"
+       xmlns:si-jmx="http://www.springframework.org/schema/integration/jmx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/jms 
+                           http://www.springframework.org/schema/jms/spring-jms-3.1.xsd
+                           http://www.springframework.org/schema/integration
+                           http://www.springframework.org/schema/integration/spring-integration-2.1.xsd
+                           http://www.springframework.org/schema/integration/jmx
+                           http://www.springframework.org/schema/integration/jmx/spring-integration-jmx-2.1.xsd">
+ 
+
+
+  <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+        p:systemPropertiesModeName="SYSTEM_PROPERTIES_MODE_OVERRIDE">
+    <property name="locations">
+      <list>
+        <value>classpath:/cluster.properties</value>
+        <value>classpath:/analysis.properties</value>
+      </list>
+    </property>
+  </bean>
+
+  <context:annotation-config />
+
+  <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"/>
+
+  <bean id="ClusterNodeInfo"  class="org.headvances.cluster.ClusterNodeInfo">
+    <property name="description"  value="Crawler analysis node"/>
+    <property name="role">
+      <set>
+        <value>analysis</value>
+      </set>
+    </property>
+  </bean>
+
+  <bean id="AnalysisServerConfig" class="org.headvances.analysis.AnalysisServerConfig">
+    <property name="roles" value="${analysis.server.config.role}" />
+  </bean>
+
+  <bean id="XHTMLDocumentClassifier" class="org.headvances.nlp.ml.classify.xhtml.MaxEntClassifier">
+    <property name="trustThreshold" value="0.85" />
+  </bean>
+
+  <bean id="SiteContextManager" class="org.headvances.xhtml.site.SiteContextManager" />
+
+  <bean id="XHTMLContentExtractor" class="org.headvances.analysis.xhtml.XHTMLContentExtractor" />
+
+  <bean id="XHTMLContentXpathExtractor" class="org.headvances.analysis.xhtml.XHTMLContentXPathExtractor" />
+
+  <bean id="AnalysisHistory" class="org.headvances.analysis.AnalysisHistory" />
+
+  <bean id="XHTMLErrorAnalyzer" class="org.headvances.analysis.xhtml.XHTMLErrorAnalyzer" />
+
+  <bean id="XHTMLTextAnalyzer" class="org.headvances.analysis.xhtml.XHTMLTextAnalyzer" />
+
+  <bean id="LanguageAnalyzer"  class="org.headvances.analysis.xhtml.LanguageAnalyzer" />
+
+  <bean id="SuspectTagErrorAnalyzer"  class="org.headvances.analysis.xhtml.SuspectTagErrorAnalyzer" />
+
+  <bean id="AnalysisService" class="org.headvances.analysis.AnalysisService">
+    <property name="analyzers">
+      <list>
+        <ref bean="XHTMLErrorAnalyzer" />
+        <ref bean="XHTMLTextAnalyzer" />
+        <ref bean="LanguageAnalyzer" />
+        <ref bean="SuspectTagErrorAnalyzer" />
+      </list>
+    </property>
+  </bean>
+  
+  <bean id="DocumentTagStatistic" class="org.headvances.analysis.statistic.DocumentTagStatistic" />
+  <bean id="ContentTypeStatistic" class="org.headvances.analysis.statistic.ContentTypeStatistic" />
+
+  <bean id="AnalyseThread" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+    <property name="corePoolSize" value="${analysis.number-of-thread}"/>
+  </bean>
+
+  <si:channel id="InputChannel">
+    <si:queue capacity="100"/>
+  </si:channel>
+
+  <si:gateway id="AnalysisInputGateway" 
+              service-interface="org.headvances.analysis.integration.AnalysisInputGateway" 
+              default-request-channel="InputChannel"/>
+
+  <si:publish-subscribe-channel id="OutputChannel" />
+
+  <si:service-activator input-channel="InputChannel" output-channel="OutputChannel" ref="AnalysisService" method="analyze">
+    <si:poller task-executor="AnalyseThread" fixed-rate="100" />
+  </si:service-activator>
+
+  <bean id="FileOutputAdapter" class="org.headvances.analysis.integration.FileOutputAdapter">
+    <property name="enable" value="${analysis.output.file}"/>
+    <property name="directory" value="${analysis.data.dir}/xhtml" />
+    <property name="maxDocumentPerFile" value="10000" />
+    <property name="compress" value="true" />
+  </bean>
+  <si:outbound-channel-adapter id="FileOutputEndpoint" channel="OutputChannel" ref="FileOutputAdapter" method="save" />
+
+  <bean id="ConsoleOutputAdapter" class="org.headvances.analysis.integration.ConsoleOutputAdapter">
+    <property name="enable" value="${analysis.output.console}"/>
+  </bean>
+  <si:outbound-channel-adapter id="ConsoleOutputEndpoint" channel="OutputChannel" ref="ConsoleOutputAdapter" method="write" />
+
+  <bean id="ReportOutputAdapter" class="org.headvances.analysis.integration.ReportOutputAdapter" destroy-method="onDestroy">
+    <property name="enable" value="${analysis.output.report}"/>
+  </bean>
+  <si:outbound-channel-adapter id="ReportOutputEndpoint" channel="OutputChannel" ref="ReportOutputAdapter" method="write" />
+
+  <!--
+  <bean id="registry" class="org.springframework.remoting.rmi.RmiRegistryFactoryBean">
+    <property name="port" value="1099"/>
+  </bean>
+
+  <bean id="serverConnector" class="org.springframework.jmx.support.ConnectorServerFactoryBean" depends-on="registry">
+    <property name="objectName" value="connector:name=rmi"/>
+    <property name="serviceUrl" value="service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi"/>
+  </bean>
+  -->
+
+  <bean id="mbeanServer" class="org.springframework.jmx.support.MBeanServerFactoryBean">
+    <property name="locateExistingServerIfPossible" value="true"/>
+  </bean>
+
+  <context:mbean-export default-domain="org.headvances.analysis"/>
+  <si-jmx:mbean-export  default-domain="org.headvances.analysis"  managed-components="*"/>
+</beans>

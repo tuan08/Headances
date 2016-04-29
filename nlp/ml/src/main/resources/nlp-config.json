@@ -1,0 +1,70 @@
+{
+  "plugins": [
+    {
+      "name": "FileExplorer",
+      "description": "A file explorer plugin",
+      "type": "org.headvances.ml.swingui.nlp.fexplorer.FileExplorerPlugin",
+      "actionSet": {
+        "popup": {
+          "name": "RightClickPopup",
+          "label": "Select An Action",
+          "actions": [
+            {
+              "name": "Delete",
+              "label": "Delete",
+              "tooltip": "Delete this file or folfer",
+              "description": "Delete this file or folder"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "WTagEditor",
+      "description": "Plugin to edit/analyze the the crf training data",
+      "type": "org.headvances.ml.swingui.nlp.editor.wtag.WTagEditorPlugin",
+      "actionSet": {
+        "popup.tag.np": {
+          "name": "popup.tag.np",
+          "label": "Tag Proper Name",
+          "actions": [
+            { "name": "loc", "label": "Location - Vị Trí", "tooltip": "Location Tag" },
+            { "name": "org", "label": "Organization - Tổ Chức", "tooltip": "Organization Tag" },
+            { "name": "per", "label": "Person - Người", "tooltip": "Person Entity Tag" },
+            { "name": "evt", "label": "Event - Sự Kiện", "tooltip": "Event Entity Tag" }
+          ]
+        },
+        "popup.tag.num": {
+          "name": "popup.tag.num",
+          "label": "Tag Number",
+          "actions": [
+            { "name": "time", "label": "Time - Thời Gian", "tooltip": "Time Tag" },
+            { "name": "percent", "label": "Percent - Phần Trăm", "tooltip": "Phần Trăm" },
+            { "name": "phone", "label": "Phone - Số Phone", "tooltip": "Phone Tag" },
+            { "name": "qt:dist", "label": "QT Distance - Khoảng Cách", "tooltip": "QT Distance" },
+            { "name": "qt:sprf", "label": "QT Superficie - Diện Tích", "tooltip": "QT Superficie" },
+            { "name": "qt:vol", "label": "QT Volume - Thể Tích", "tooltip": "QT Volume" },
+            { "name": "qt:energy", "label": "QT Energy - Năng Lượng", "tooltip": "QT Energy" },
+            { "name": "qt:time", "label": "QT Time - Thời Gian", "tooltip": "QT Time" },
+            { "name": "qt:speed", "label": "QT Speed - Vận Tốc", "tooltip": "QT Speed" },
+            { "name": "qt:weight", "label": "QT Weight - Trọng Lượng", "tooltip": "QT Weight" },
+            { "name": "qt:temp", "label": "QT Temperature - Nhiệt Độ", "tooltip": "QT Temperature" },
+            { "name": "qt:currency", "label": "QT Currency - Tiền Tệ", "tooltip": "QT Currency Tag" },
+            { "name": "qt:bin", "label": "QT Binary - Nhị Phân", "tooltip": "QT Binary" },
+            { "name": "qt:other", "label": "QT Other - Khác", "tooltip": "QT Other" }
+          ]
+        },
+        "popup.tag.qtag": {
+          "name": "popup.tag.qtag",
+          "label": "Tag QTAG",
+          "actions": [
+            { "name": "qtag:type", "label": "QTAG Type - Loai cau hoi", "tooltip": "Loai Cau Hoi" },
+            { "name": "qtag:obj",  "label": "QTAG Object - Thanh phan hoi", "tooltip": "Thanh phan hoi" },
+            { "name": "qtag:attr", "label": "QTAG Attribute - Thanh phan bo tro", "tooltip": "Thanh phan bo tro" },
+            { "name": "qtag:other","label": "QTAG Other - Thanh phan khac", "tooltip": "Thanh phan khac" }
+          ]
+        }
+      }
+    }
+  ]
+}

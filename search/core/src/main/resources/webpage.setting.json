@@ -1,0 +1,40 @@
+{
+  "analysis": {
+    "analyzer": {
+      "standard": {
+        "type": "standard"
+      },
+
+      "vn_analyzer": { "type": "org.headvances.search.analysis.VNAnalyzerProvider" },
+
+      "url": { "tokenizer" : "url" },
+
+      "phoneNumber": { "tokenizer" : "phoneNumber" },
+
+      "vnLanguage": { "tokenizer" : "vnLanguage" }
+    },
+
+    "tokenizer": {
+      "standard": {
+        "type": "standard"
+      },
+
+      "url": {
+        "type": "org.headvances.search.analysis.URLTokenizerFactory"
+      },
+
+      "phoneNumber": {
+        "type": "org.headvances.search.analysis.PhoneNumberTokenizerFactory"
+      },
+
+      "vnLanguage": {
+        "type": "org.headvances.search.analysis.VNTokenizerFactory"
+      }
+    },
+
+    "index" : {
+      "refresh_interval" : "-1",
+      "merge.policy.merge_factor" : 5
+    }
+  }
+}

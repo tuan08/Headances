@@ -1,0 +1,50 @@
+#HCrawlerConfig {
+  font-family: veranda ;
+  font-size:  0.8em;
+}
+
+#HCrawlerConfig .clickable {
+  color: blue;
+  cursor: pointer ;
+}
+
+#HCrawlerConfig label {
+  display: block ; 
+  font-weight: bold ;
+  padding: 5px 0px;
+  text-align: left ;
+}
+
+#HCrawlerConfig input {
+  width: 320px ;
+  font-size:  1em;
+  height:  20px;
+  display: block ; 
+  padding: 0px;
+  border: 1px solid lightgray;
+}
+
+#HCrawlerConfig input.checkbox {
+  width: auto ;
+  display: inline-block ; 
+}
+
+#HCrawlerConfig textarea {
+  width: 320px ;
+  font-size:  1em;
+  height:  40px;
+  display: block ; 
+  padding: 0px;
+  border: 1px solid lightgray;
+}
+
+#HCrawlerConfig .link {
+  cursor:pointer;
+  color:blue;
+  text-decoration:underline ;
+}
+
+#HCrawlerConfig .clickable {
+  cursor:pointer;
+  color:blue;
+}

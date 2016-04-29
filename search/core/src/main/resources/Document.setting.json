@@ -1,0 +1,13 @@
+{
+  "analysis": {
+    "analyzer": {
+      "standard": {
+        "type": "standard"
+      },
+
+      "vn_analyzer": {
+        "type": "org.headvances.search.analysis.VNAnalyzerProvider"
+      }
+    }
+  }
+}

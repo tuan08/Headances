@@ -1,0 +1,7 @@
+{
+  "hostname" :  "test.moom.vn",
+  "injectUrl" : ["http://test.moom.vn/test/crawler"],
+  "crawlDeep" : 4,
+  "refreshPeriod" : 86400,
+  "tags" : [ "test"]
+}

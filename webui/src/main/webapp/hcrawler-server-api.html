@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HCrawler</title>
+
+    <link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="css/blueprint/print.css"  type="text/css" media="print" />
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" href="<c:url value="/resources/blueprint/ie.css" />" type="text/css" media="screen, projection" />
+    <![endif]-->
+    <link rel="stylesheet" href="css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+
+    <link rel="stylesheet" href="js/jquery/css/custom-theme/jquery-ui-1.8.21.custom.css" type="text/css"/>
+    <script src="js/jquery/js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery/js/jquery-ui-1.8.21.custom.min.js"></script>
+    
+    <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.4/underscore-min.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.3.3/backbone-min.js"></script>
+  	
+    <script src="js/crawler/Server.js"></script>
+    <style>
+      table { border: 1px solid black ; border-collapse:collapse; }
+      td, th { border: 1px solid black ; padding: 5px 10px ; }
+    </style>
+    <script>
+      crawler.Server.connect('localhost:5700','crawler','crawler');
+
+      function showHide(id) {
+        $('#' + id).toggle('slow') ; } </script>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <th style="width: 400px">Method</th>
+        <th>Return Data</th>
+      </tr>
+
+      <tr>
+        <td>
+          crawler.Server.connect(url,username,password)
+          <p>This method create a session connection to the crawler master</p>
+        </td>
+        <td>
+          <a href="javascript:showHide('connectData');">show/hide</a>
+          <script>
+            var members = JSON.stringify(crawler.Server.members, null, '  ');
+          </script>
+          <pre id="connectData" style="display:none"><script>document.write(members)</script></pre>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          crawler.Server.getSiteInfos(host, port)
+          <p>This method return the site info</p>
+        </td>
+        <td>
+          <a href="javascript:showHide('siteInfoData');">show/hide</a>
+          <script>
+            var siteInfos = JSON.stringify(crawler.Server.getSiteInfos('localhost', 5700), null, ' ');
+          </script>
+          <pre id="siteInfoData" style="display: none"><script>document.write(siteInfos)</script></pre>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          crawler.Server.getSiteConfig(host, port, hostname)
+          <p>This method return the site info</p>
+        </td>
+        <td>
+          <a href="javascript:showHide('siteConfig');">show/hide</a>
+          <script>
+            var siteConfig = JSON.stringify(crawler.Server.getSiteConfig('localhost', 5700, 'vnexpress.net'), null, ' ');
+          </script>
+          <pre id="siteConfig" style="display: none"><script>document.write(siteConfig)</script></pre>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          crawler.Server.saveSiteConfig(host, port, config)
+          <p>This method return the site info</p>
+        </td>
+        <td>
+          <a href="javascript:showHide('saveSiteConfig');">show/hide</a>
+          <a href="javascript:testSave();">Test Save</a>
+          <script>
+            var config = {
+              "hostname": "vnexpress.net",
+              "tags": ["test1", "test2"],
+              "status": "ok",
+              "description": null,
+              "crawlSubDomain": false,
+              "refreshPeriod": 86400,
+              "maxConnection": 2,
+              "xpathConfig": null,
+              "injectUrl": [ "http://vnexpress.net" ],
+              "crawlDeep": 3
+            }
+            function testSave() {
+              var siteConfig = JSON.stringify(crawler.Server.saveSiteConfig('localhost', 5700, config), null, ' ');
+              alert(siteConfig) ;
+            }
+
+            var siteConfig = JSON.stringify(crawler.Server.saveSiteConfig('localhost', 5700, config), null, ' ');
+          </script>
+          <pre id="saveSiteConfig" style="display: none"><script>document.write(siteConfig)</script></pre>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          crawler.Server.getDataProcessInfo(host, port)
+          <p>This method return the processed data info</p>
+        </td>
+        <td>
+          <a href="javascript:showHide('processInfoData');">show/hide</a>
+          <script>
+            var jvmInfo = JSON.stringify(crawler.Server.getDataProcessInfo('localhost', 5700), null, ' ');
+          </script>
+          <pre id='processInfoData' style='display: none'><script>document.write(jvmInfo)</script></pre>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          crawler.Server.getURLScheduleInfo(host, port)
+        </td>
+        <td>
+          <a href="javascript:showHide('scheduleInfoData');">show/hide</a>
+          <script>
+            var scheduleInfo = JSON.stringify(crawler.Server.getURLScheduleInfo('localhost', 5700), null, ' ');
+          </script>
+          <pre id='scheduleInfoData' style="display: none"><script>document.write(scheduleInfo)</script></pre>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          crawler.Server.getURLCommitInfo(host, port)
+        </td>
+        <td>
+          <a href="javascript:showHide('commitInfoData');">show/hide</a>
+          <script>
+            var commitInfo = JSON.stringify(crawler.Server.getURLCommitInfo('localhost', 5700), null, ' ');
+          </script>
+          <pre id="commitInfoData" style="display: none"><script>document.write(commitInfo)</script></pre>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          crawler.Server.getJVMInfo(host, port)
+          <p>This method return the site info</p>
+        </td>
+        <td>
+          <a href="javascript:showHide('jvmInfoData');">show/hide</a>
+          <script>
+            var jvmInfo = JSON.stringify(crawler.Server.getJVMInfo('localhost', 5700), null, ' ');
+          </script>
+          <pre id="jvmInfoData" style="display: none"><script>document.write(jvmInfo)</script></pre>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

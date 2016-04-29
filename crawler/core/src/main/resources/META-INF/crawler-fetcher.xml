@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:amq="http://activemq.apache.org/schema/core"
+       xmlns:jms="http://www.springframework.org/schema/jms"
+       xmlns:si="http://www.springframework.org/schema/integration"
+       xmlns:sijms="http://www.springframework.org/schema/integration/jms"
+       xmlns:si-jmx="http://www.springframework.org/schema/integration/jmx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://activemq.apache.org/schema/core 
+                           http://activemq.apache.org/schema/core/activemq-core.xsd
+                           http://www.springframework.org/schema/jms 
+                           http://www.springframework.org/schema/jms/spring-jms.xsd
+                           http://www.springframework.org/schema/integration
+                           http://www.springframework.org/schema/integration/spring-integration-2.0.xsd
+                           http://www.springframework.org/schema/integration/jms 
+                           http://www.springframework.org/schema/integration/jms/spring-integration-jms-2.1.xsd
+                           http://www.springframework.org/schema/integration/jmx
+                           http://www.springframework.org/schema/integration/jmx/spring-integration-jmx-2.1.xsd">
+
+  <context:component-scan base-package="org.headvances.xhtml.site" />
+
+  <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+        p:systemPropertiesModeName="SYSTEM_PROPERTIES_MODE_OVERRIDE">
+    <property name="locations">
+      <list>
+        <value>classpath:/cluster.properties</value>
+        <value>classpath:/crawler.properties</value>
+      </list>
+    </property>
+  </bean>
+
+   <!--
+  <bean id="SiteContextManager" class="org.headvances.crawler.site.SiteContextManager" init-method="onInit"/>
+  -->
+
+  <bean id="ClusterNodeInfo"  class="org.headvances.cluster.ClusterNodeInfo">
+    <property name="description"  value="Crawler fetcher node"/>
+    <property name="role">
+      <set>
+        <value>fetcher</value>
+      </set>
+    </property>
+  </bean>
+
+  <bean id="SiteSessionManager" class="org.headvances.crawler.fetch.http.SiteSessionManager" />
+
+  
+  <bean id="HttpFetcherManager" class="org.headvances.crawler.fetch.http.HttpFetcherManager" init-method="onInit">
+    <property name="numberOfFetcher" value="${crawler.fetcher.number-of-threads}" />
+    <property name="name" value="HttpFetchers" />
+  </bean>
+
+  <jms:listener-container container-type="default" connection-factory="jmsCF" acknowledge="auto" prefetch="100">
+    <jms:listener destination="crawler.urldatum.fetch" ref="HttpFetcherManager" method="schedule" />
+  </jms:listener-container>
+
+  <amq:queue id="FetchDataQueue" physicalName="crawler.fetchdata" />
+  <!--
+  <si:channel id="FetchDataChannel" />
+  <sijms:outbound-channel-adapter channel="FetchDataChannel" connection-factory="jmsCF"  destination="FetchDataQueue"/>
+  <si:gateway id="FetchDataGateway" 
+              service-interface="org.headvances.crawler.channel.ChannelGateway" 
+              default-request-channel="FetchDataChannel"/>
+  -->
+  <bean id="FetchDataGateway" class="org.headvances.crawler.channel.JMSChannelGateway">
+    <property name="destination" ref="FetchDataQueue" />
+    <property name="jmsTemplate">
+      <bean class="org.springframework.jms.core.JmsTemplate" p:connectionFactory-ref="jmsCF">
+        <property name="deliveryPersistent" value="${crawler.jms.delivery.persistent}"/>
+      </bean>
+    </property>
+  </bean>
+
+  <bean id="CrawlerFetcher" class="org.headvances.crawler.CrawlerFetcher" init-method="onInit">
+    <property name="startOnInit" value="true" />
+  </bean>
+
+  <!--
+  <bean id="registry" class="org.springframework.remoting.rmi.RmiRegistryFactoryBean">
+    <property name="port" value="1099"/>
+  </bean>
+
+  <bean id="serverConnector" class="org.springframework.jmx.support.ConnectorServerFactoryBean">
+    <property name="objectName" value="connector:name=rmi"/>
+    <property name="serviceUrl" value="service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi/fetcher"/>
+  </bean>
+
+  <bean id="mbeanServer" class="org.springframework.jmx.support.MBeanServerFactoryBean">
+    <property name="locateExistingServerIfPossible" value="true"/>
+  </bean>
+
+  <context:mbean-export default-domain="org.headvances.crawler.fetcher"/>
+  <si-jmx:mbean-export  default-domain="org.headvances.crawler.fetcher"  managed-components="*"/>
+  -->
+</beans>

@@ -1,0 +1,46 @@
+{
+  "monitor" : [
+    {
+      "entity": "iphone 3gs",
+      "description": "Monitor iphone 3GS",
+      "contentDistribution" : [
+         { "name": "Article", count: 100 },
+         { "name": "Blog", count: 100 },
+         { "name": "Forum", count: 100 },
+         { "name": "Product", count: 100 },
+         { "name": "Classified", count: 100 },
+         { "name": "Job", count: 100 },
+         { "name": "Other", count: 100 },
+      ],
+
+      "opinionContentDistribution" : [
+         {
+           "name": "Article",
+           "rankMinus2": { "name" : "rank -2", count : 15, uniqueCount: 10 },
+           "rankMinus1": { "name" : "rank -1", count : 15, uniqueCount: 10 },
+           "rankPlus0" : { "name" : "rank  0", count : 15, uniqueCount: 10 },
+           "rankPlus1" : { "name" : "rank +1", count : 15, uniqueCount: 10 },
+           "rankPlus2" : { "name" : "rank +2", count : 15, uniqueCount: 10 }
+         }
+      ],
+
+      "opinionCategoryDistribution" : [
+         {
+           "name": "Design",
+           "rank -1": 10,
+           "rank -2": 10,
+           "rank +0": 10,
+           "rank +1": 10,
+           "rank +2": 10
+         }
+      ],
+
+      "executeInfo": {
+        "start":   "20/12/2011@10:51:65",
+        "finish":  "20/12/2011@10:59:05",
+        "processedRecord":  1000,
+        "totalRecord":  5000
+      }
+    }
+  ]
+}

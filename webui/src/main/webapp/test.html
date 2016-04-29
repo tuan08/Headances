@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>I have a back bone</title>
+
+    <link rel="stylesheet" href="css/blueprint/screen.css" />" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="css/blueprint/print.css" />" type="text/css" media="print" />
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" href="<c:url value="/resources/blueprint/ie.css" />" type="text/css" media="screen, projection" />
+    <![endif]-->
+    <link  href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+
+    <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.4/underscore-min.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.3.3/backbone-min.js"></script>
+
+    <script src="js/Friend.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#accordion").accordion();
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <div id="ctr-workspace" style="width: 250px; float: left; padding: 10px 5px">
+        <div id="Master">
+          Master
+        </div>
+        <div id="Fetchers">
+          Fetchers
+        </div>
+        <button id="add-friend">Add Friend</button>
+        <ul id="friends-list"></ul>
+
+        <div id="accordion">
+          <h3><a href="#">Master</a></h3>
+          <div>First content</div>
+
+          <h3><a href="#">Fetchers</a></h3>
+          <div>Second content</div>
+        </div>
+      </div>
+
+      <div id="workspace" style="margin-left: 250px; padding: 10px; border-left: 1px solid lightgray; height: 500px">
+        this is test
+      </div>
+      <br style="clear: both"/>
+    </div>
+
+    <script src="js/AppView.js"></script>
+    <script>
+      (function ($) {
+        var appview = new AppView();
+      })
+      (jQuery);
+    </script>
+  </body>
+</html>

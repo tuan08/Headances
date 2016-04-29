@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<assembly>
+  <id>release</id>
+  <formats>
+    <format>dir</format>
+    <!--
+    <format>tar.gz</format>
+    <format>zip</format>
+    -->
+  </formats>
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>lib</outputDirectory>
+      <includes>
+        <include>org.headvances:headvances.lib.common</include>
+        <include>org.headvances:headvances.lib.xhtml</include>
+        <include>org.headvances:headvances.lib.jms</include>
+        <include>org.headvances:headvances.lib.cluster</include>
+        <include>org.headvances:headvances.lib.swingui</include>
+        <include>org.headvances:headvances.nlp.language</include>
+        <include>org.headvances:headvances.nlp.core</include>
+        <include>org.headvances:headvances.nlp.ml</include>
+        <include>org.headvances:headvances.crawler.core</include>
+        <include>org.headvances:headvances.analysis</include>
+        <include>org.headvances:headvances.search.core</include>
+        <include>org.headvances:headvances.storage.hadoop</include>
+        <include>org.headvances:headvances.all</include>
+
+        <include>commons-cli:commons-cli</include>
+
+        <include>dk.brics.automaton:automaton</include>
+        <include>org.codehaus.jackson:jackson-core-asl</include>
+        <include>org.codehaus.jackson:jackson-mapper-asl</include>
+
+        <include>org.headvances:headvances.lib.jsoup</include>
+        <include>net.sourceforge.nekohtml:nekohtml</include>
+        <include>xerces:xercesImpl</include>
+
+
+        <include>org.springframework:spring-core</include>
+        <include>org.springframework:spring-asm</include>
+        <include>org.springframework:spring-expression</include>
+        <include>org.springframework:spring-beans</include>
+        <include>org.springframework:spring-context</include>
+
+        <include>org.springframework:org.springframework.context.support</include>
+        <include>org.springframework:org.springframework.transaction</include>
+        <include>org.springframework:org.springframework.jms</include>
+        <include>org.springframework:org.springframework.aop</include>
+
+        <include>org.springframework.integration:spring-integration-core</include>
+        <include>org.springframework.integration:spring-integration-jms</include>
+        <include>org.springframework.integration:spring-integration-jmx</include>
+
+
+        <include>aopalliance:aopalliance</include>
+
+        <include>org.apache.opennlp:opennlp-maxent</include>
+        <include>org.apache.opennlp:opennlp-tools</include>
+
+        <include>org.apache.activemq:activemq-core</include>
+        <include>org.apache.activemq:kahadb</include>
+        <include>org.apache.activemq:activeio-core</include>
+        <include>org.apache.activemq:com.springsource.org.apache.activemq</include>
+        <include>org.apache.geronimo.specs:geronimo-jms_1.1_spec</include>
+        <include>org.apache.geronimo.specs:geronimo-jta_1.1_spec</include>
+        <include>org.apache.geronimo.specs:geronimo-j2ee-management_1.1_spec</include>
+        <include>org.apache.xbean:com.springsource.org.apache.xbean.spring</include>
+        <include>javax.jms:com.springsource.javax.jms</include>
+
+        <include>com.hazelcast:hazelcast</include>
+        <include>com.hazelcast:hazelcast-client</include>
+        <include>com.hazelcast:hazelcast-spring</include>
+
+
+        <include>org.apache.hadoop:hadoop-core</include>
+        <include>org.apache.hadoop:hadoop-gpl-compression</include>
+
+        <include>org.apache.nutch:nutch</include>
+        <include>org.apache.nutch:language-identifier</include>
+
+        <include>org.apache.httpcomponents:httpcore</include>
+        <include>org.apache.httpcomponents:httpclient</include>
+
+        <include>net.sourceforge.cpdetector:cpdetector</include>
+        <include>net.sourceforge.jchardet:jchardet</include>
+
+        <include>cc.mallet:mallet</include>
+        <include>trove:trove</include>
+
+        <include>ant:ant</include>
+        <include>antlr:antlr</include>
+
+        <include>org.slf4j:slf4j-api</include>
+        <include>org.slf4j:slf4j-simple</include>
+        <include>org.slf4j:jcl-over-slf4j</include>
+        <!--
+        <include>org.slf4j:log4j-over-slf4j</include>
+         -->
+        <include>org.apache.lucene:lucene-core</include>
+        <include>org.apache.lucene:lucene-analyzers</include>
+        <include>org.apache.lucene:lucene-queries</include>
+        <include>org.apache.lucene:lucene-memory</include>
+        <include>org.apache.lucene:lucene-highlighter</include>
+
+        <include>org.elasticsearch:elasticsearch</include>
+
+        <!-- HTTP SERVER -->
+        <include>org.headvances:headvances.lib.http</include>
+
+        <include>org.springframework:spring-web</include>
+        <include>org.springframework:spring-webmvc</include>
+        
+        <include>org.eclipse.jetty:jetty-server</include>
+        <include>org.eclipse.jetty:jetty-webapp</include>
+        <include>org.eclipse.jetty:jetty-util</include>
+        <include>org.eclipse.jetty:jetty-io</include>
+        <include>org.eclipse.jetty:jetty-http</include>
+        <include>org.eclipse.jetty:jetty-servlet</include>
+        <include>org.mortbay.jetty:servlet-api</include>
+        <include>org.eclipse.jetty:jetty-security</include>
+        <include>org.eclipse.jetty:jetty-continuation</include>
+        <include>org.eclipse.jetty:jetty-xml</include>
+
+        <include>org.eclipse.jdt.core.compiler:ecj</include>
+
+
+        <include>javax.servlet:jstl</include>
+        <include>javax.servlet.jsp:jsp-api</include>
+        <include>javax.el:el-api</include>
+
+        <include>org.glassfish.web:jsp-impl</include>
+        <include>org.glassfish.web:el-impl</include>
+
+        <include>joda-time:joda-time</include>
+        <include>joda-time:joda-time-jsptags</include>
+      </includes>
+    </dependencySet>
+
+    <dependencySet>
+      <outputDirectory>webapps</outputDirectory>
+      <outputFileNameMapping>search.war</outputFileNameMapping>
+      <includes>
+        <include>org.headvances:headvances.search.webui</include>
+      </includes>
+    </dependencySet>
+
+    <dependencySet>
+      <outputDirectory>webapps</outputDirectory>
+      <outputFileNameMapping>root.war</outputFileNameMapping>
+      <includes>
+        <include>org.headvances:headvances.webui</include>
+      </includes>
+    </dependencySet>
+
+  </dependencySets>
+
+  <fileSets>
+    <fileSet>
+      <directory>src/app</directory>
+      <outputDirectory></outputDirectory>
+      <includes>
+        <include>**/*</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</assembly>

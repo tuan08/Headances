@@ -1,0 +1,95 @@
+{
+  "id" : "sample1" ,
+  "createdBy" : "system" ,
+  "createdDate": 1293814800000,
+  "modifiedBy" : "system" ,
+  "modifiedDate": 1293814800000 ,
+
+  "title" : "sample title, Hà Nội Việt Nam",
+  "description" : "sample description, Hà Nội Việt Nam",
+  "content" : "sample content, Hà Nội Việt Nam",
+
+  "tag" : [ "tag1", "tag2", "colon:colon" ],
+
+  "headers" : {
+    "test"    : "test",
+    "Expired" : "2010-08-09T11:13:04+0300"
+  },
+
+  "entities" : {
+    "location" : {
+      "lat" : 40.73,
+      "lon" : -74.1
+    },
+
+    "primitive" : {
+      "string" : "string",
+      "text" : "this is a text",
+      "tag" : [ "tag1", "tag2", "colon:colon" ],
+      "intValue" : 1,
+      "longValue" : 1,
+      "doubleValue" : 1.0,
+      "booleanValue" : true
+    },
+
+    "contact" : {
+      "name" : "Headvances",
+      "addressNumber" : 186,
+      "street" : "Truong Dinh",
+      "quarter" : "Phuong Truong Dinh",
+      "district" : "Quan Hai Ba Trung",
+      "city" : "Hanoi",
+      "country" : "Vietnam",
+
+      "email" : [ "info@headvances.com", "job@headvances.com"],
+      "phone" : [ "04 3333-4444", "04-1234-5678"],
+      "mobile" : [ "090 123 4567"],
+      "fax" :  ["04 3333-4444"]
+    },
+
+    "htmlLink" : {
+      "deep" : "1",
+      "url" : "http://vnexpress.net/gl/xa-hoi/2011/09/tien-dua-co-chu-tich-vo-chi-cong-ve-nghia-trang-tp-hcm/"
+    },
+
+    "product" : {
+      "name" : "Iphone 3GS",
+      "description" : "A new iphone 3GS for sale",
+      "price" : 20000000.00,
+      "priceUnit" : "vnd"
+    },
+
+    "mainContent" : {
+      "title" : "mainContent sample title, Hà Nội Việt Nam",
+      "description" : "mainContent sample description, Hà Nội Việt Nam",
+      "content" : "mainContent sample content, Hà Nội Việt Nam"
+    }
+  }
+} {
+  "id" : "sample2" ,
+  "createdBy" : "system" ,
+  "createdDate": 1293814800000,
+  "modifiedBy" : "system" ,
+  "modifiedDate": 1293814800000 ,
+
+  "title" : "sample title",
+  "description" : "sample description",
+  "content" : "sample content",
+
+  "entities" : {
+    "location" : {
+      "lat" : 40.73,
+      "lon" : -74.1
+    },
+
+    "primitive" : {
+      "string" : "string",
+      "text" : "this is a text",
+      "tag" : [ "tag1", "tag2", "colon:colon" ],
+      "intValue" : 1,
+      "longValue" : 1,
+      "doubleValue" : 1.0,
+      "booleanValue" : true
+    }
+  }
+} 
