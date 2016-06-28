@@ -1,6 +1,5 @@
 package org.headvances.html.dom.extract;
 
-import org.headvances.html.dom.extract.DocumentExtractor.Type;
 import org.headvances.html.fetcher.Fetcher ;
 import org.headvances.html.fetcher.HttpClientFetcher ;
 import org.junit.Test ;

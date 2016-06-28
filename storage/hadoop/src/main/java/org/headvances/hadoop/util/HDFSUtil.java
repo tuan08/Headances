@@ -11,10 +11,7 @@ import org.apache.hadoop.fs.Path;
 public class HDFSUtil {
 	
   static public Configuration getDaultConfiguration() {
-    Configuration conf = new Configuration(false) ;
-    conf.addResource("core-default.xml") ;
-    conf.addResource("hdfs-default.xml") ;
-    conf.addResource("mapred-default.xml") ;
+    Configuration conf = new Configuration(true) ;
     return conf ;
   }
   

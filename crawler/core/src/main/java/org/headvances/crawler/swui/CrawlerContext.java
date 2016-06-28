@@ -52,8 +52,8 @@ public class CrawlerContext {
             ModifySiteContextTask addConfigTask = new ModifySiteContextTask();
             addConfigTask.add("dantri.com.vn", "http://dantri.com.vn", 3, 2, "ok");
             addConfigTask.add("vnexpress.net", "http://vnexpress.net", 3, 2, "ok");
-            addConfigTask.add("edition.cnn.com", "http://edition.cnn.com/", 3, 2, "ok");
-            addConfigTask.add("careerbuilder.com", "http://careerbuilder.com/", 3, 2, "ok");
+            //addConfigTask.add("edition.cnn.com", "http://edition.cnn.com/", 3, 2, "ok");
+            //addConfigTask.add("careerbuilder.com", "http://careerbuilder.com/", 3, 2, "ok");
             TaskResult.dump(crawlerClient.execute(addConfigTask));
           }
           

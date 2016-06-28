@@ -14,39 +14,42 @@ import org.apache.hadoop.fs.Path;
  * Apr 19, 2010  
  */
 public class ColumnFamilyDB {
-	final static public Segment[] NO_SEGMENT = {} ;
+  final static public Segment[] NO_SEGMENT = {} ;
 
-	private String location ;
-	private DatabaseConfiguration dbconfiguration ;
-	private ColumnDefinition columnDef ;
+  private String location ;
+  private DatabaseConfiguration dbconfiguration ;
+  private ColumnDefinition columnDef ;
   private Segment[] segments = NO_SEGMENT ;
 
   public ColumnFamilyDB(String location, DatabaseConfiguration dbconfiguration, ColumnDefinition columnDef) throws IOException {
-  	this.location = location + "/" + columnDef.getName();
-  	this.dbconfiguration = dbconfiguration ;
-  	this.columnDef = columnDef ;
-  	reload() ;
+    this.location = location + "/" + columnDef.getName();
+    this.dbconfiguration = dbconfiguration ;
+    this.columnDef = columnDef ;
+    reload() ;
   }
-  
+
   public String getLocation() { return location ; }
-  
+
   public ColumnDefinition getColumnDefinition() { return this.columnDef ; }
-  
+
   synchronized public void reload() throws IOException {
     FileSystem fs = FileSystem.get(dbconfiguration.getHadoopConfiguration()) ;
-    FileStatus[] status = fs.listStatus(new Path(location)) ;
-    if(status == null || status.length == 0) return ;
     List<Segment> holder = new ArrayList<Segment>() ;
-    for(int i = 0; i < status.length; i++) {
-      Path path = status[i].getPath() ;
-      holder.add(new Segment(dbconfiguration.getHadoopConfiguration(), location, path.getName())) ;
+    Path locationPath = new Path(location);
+    if(fs.exists(locationPath)) {
+      FileStatus[] status = fs.listStatus(locationPath) ;
+      if(status == null || status.length == 0) return ;
+      for(int i = 0; i < status.length; i++) {
+        Path path = status[i].getPath() ;
+        holder.add(new Segment(dbconfiguration.getHadoopConfiguration(), location, path.getName())) ;
+      }
+      Collections.sort(holder) ;
     }
-    Collections.sort(holder) ;
     this.segments = holder.toArray(new Segment[holder.size()]) ;
   }
-  
+
   synchronized public Segment[] getSegments() { return segments ; }
-  
+
   synchronized public Segment newSegment() throws IOException {
     Segment[] temp = new Segment[segments.length + 1] ;
     for(int i = 0; i < segments.length; i++) {
@@ -59,20 +62,20 @@ public class ColumnFamilyDB {
       segmentName = Segment.createSegmentName(segments[segments.length - 1].getIndex() + 1) ;
     }
     temp[segments.length] = 
-    	new Segment(dbconfiguration.getHadoopConfiguration(), location, segmentName) ;
+        new Segment(dbconfiguration.getHadoopConfiguration(), location, segmentName) ;
     this.segments = temp ;
     return this.segments[segments.length - 1] ;
   }
- 
+
   synchronized public MultiSegmentIterator getMultiSegmentIterator() throws IOException {
     MultiSegmentIterator iterator = new MultiSegmentIterator(this.segments) ;
     return iterator ;
   }
-  
+
   public ColumnFamilyIterator getColumnFamilyIterator() throws IOException {
     return new ColumnFamilyIterator(getMultiSegmentIterator(), createCellMerger()) ;
   }
-  
+
   synchronized public void autoCompact(Reporter reporter) throws IOException {
     if(this.segments.length == 1) return ;
     Segment psegment = null ;
@@ -104,13 +107,13 @@ public class ColumnFamilyDB {
     }
     iterator.close() ;
     mitr.close() ;
-    
+
     writer.close() ;
     for(int i = 1; i < msegments.length; i++) {
       msegments[i].delete() ;
     }
     reload() ;
   }
-  
+
   protected CellMerger createCellMerger() { return new CellMerger.LatestCellMerger() ; }
 }
