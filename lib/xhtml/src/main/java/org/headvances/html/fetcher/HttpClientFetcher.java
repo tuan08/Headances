@@ -2,7 +2,8 @@ package org.headvances.html.fetcher;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
 import org.apache.http.protocol.BasicHttpContext;
 import org.headvances.data.Document;
 import org.headvances.data.HtmlDocumentUtil;
@@ -14,10 +15,10 @@ import org.headvances.util.html.URLNormalizer;
  * Apr 25, 2010  
  */
 public class HttpClientFetcher implements Fetcher {
-	private DefaultHttpClient httpclient ;
+	private CloseableHttpClient  httpclient ;
 
 	public HttpClientFetcher() {
-		this.httpclient = HttpClientFactory.getInstance() ;
+		this.httpclient =  HttpClients.createDefault();
 	}
 
 	public Document fetch(String urlString) throws Exception {

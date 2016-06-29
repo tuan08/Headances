@@ -18,12 +18,11 @@ import org.apache.http.HttpResponse;
 import org.apache.http.StatusLine;
 import org.apache.http.client.CookieStore;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.protocol.ClientContext;
+import org.apache.http.client.protocol.HttpClientContext;
 import org.apache.http.conn.ConnectTimeoutException;
 import org.apache.http.cookie.Cookie;
 import org.apache.http.impl.client.BasicCookieStore;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
+import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.protocol.BasicHttpContext;
 import org.headvances.crawler.ErrorCode;
 import org.headvances.crawler.ResponseCode;
@@ -45,7 +44,7 @@ public class HttpClientSiteSessionImpl implements SiteSession {
   private static final Logger logger = LoggerFactory.getLogger(HttpClientSiteSessionImpl.class);
   
   private String              hostname ;
-  private DefaultHttpClient   httpclient ;
+  private CloseableHttpClient httpclient ;
   private CookieStore         cookieStore ;
   private ErrorCheckCondition errorCheckCondition ;
   private boolean             lock = false ;
@@ -110,14 +109,12 @@ public class HttpClientSiteSessionImpl implements SiteSession {
     	handleError(fdata, context, getRootCause(t)) ;
     } finally {
       httpclient.getConnectionManager().closeExpiredConnections() ;
-      ThreadSafeClientConnManager mng = 
-      	(ThreadSafeClientConnManager) httpclient.getConnectionManager() ;
-      int connectionInPool = mng.getConnectionsInPool() ;
-      if(connectionInPool > (HttpClientFactory.MAX_HTTP_CONNECTION - 100)) {
-        //logger.warn("There are " + connectionInPool + " connection in pool") ;
-        mng.closeExpiredConnections() ;
-      }
-      
+//      ThreadSafeClientConnManager mng = (ThreadSafeClientConnManager) httpclient.getConnectionManager() ;
+//      int connectionInPool = mng.getConnectionsInPool() ;
+//      if(connectionInPool > (HttpClientFactory.MAX_HTTP_CONNECTION - 100)) {
+//        //logger.warn("There are " + connectionInPool + " connection in pool") ;
+//        mng.closeExpiredConnections() ;
+//      }
       if(getpage == 0 && destroy) onDestroy() ;
       lock = false ;
     }
@@ -127,7 +124,7 @@ public class HttpClientSiteSessionImpl implements SiteSession {
     HttpGet httpget = new HttpGet(url);
     BasicHttpContext httpContext = new BasicHttpContext();
     httpContext.setAttribute("crawler.site", this.hostname) ;
-    httpContext.setAttribute(ClientContext.COOKIE_STORE, cookieStore);
+    httpContext.setAttribute(HttpClientContext.COOKIE_STORE, cookieStore);
     HttpResponse response = httpclient.execute(httpget, httpContext);
     return response ;
   }
