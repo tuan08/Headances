@@ -21,13 +21,6 @@
       <version>${org.headvances.version}</version>
     </dependency>
 
-<!--
-    <dependency>
-      <groupId>org.headvances</groupId>
-      <artifactId>headvances.lib.jsoup</artifactId>
-      <version>${org.headvances.version}</version>
-    </dependency>
--->
     <dependency>
       <groupId>org.jsoup</groupId>
       <artifactId>jsoup</artifactId>

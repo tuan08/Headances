@@ -11,17 +11,15 @@ import org.headvances.html.dom.TNode;
  * Apr 24, 2010  
  */
 public class CleanEmptyNodeProcessor extends TNodeProcessor {
-	public void preTraverse(TNode node) {
-		List<TNode> children = node.getChildren() ;
-		if(children == null) return ;
-		Iterator<TNode> i = children.iterator() ;
-		TNode child = i.next() ;
-		if(child.isEmpty()) {
-			i.remove() ;
-		} else if("select".equals(child.getNodeName()) || 
-				"input".equals(child.getNodeName()) ||
-				"textarea".equals(child.getNodeName())) {
-			i.remove() ;
-		}
-	}
+  public void preTraverse(TNode node) {
+    List<TNode> children = node.getChildren() ;
+    if(children == null) return ;
+    Iterator<TNode> i = children.iterator() ;
+    TNode child = i.next() ;
+    if(child.isEmpty()) {
+      i.remove() ;
+    } else if("select".equals(child.getNodeName()) || "input".equals(child.getNodeName()) || "textarea".equals(child.getNodeName())) {
+      i.remove() ;
+    }
+  }
 }

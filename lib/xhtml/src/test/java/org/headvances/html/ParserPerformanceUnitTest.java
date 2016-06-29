@@ -9,10 +9,9 @@ import org.junit.Test;
 public class ParserPerformanceUnitTest {
   @Test
   public void testTextNode() throws Exception {
-  	String url = 
-    	"http://vnexpress.net";
-    
-  	URLConnectionFetcher fetcher = new URLConnectionFetcher();
+    String url = "http://vnexpress.net";
+
+    URLConnectionFetcher fetcher = new URLConnectionFetcher();
     Document hdoc = fetcher.fetch(url);
     String html = hdoc.getContent() ;
     html = new LSDomWriter().toXMLString(NekoParser.INSTANCE.parseNonWellForm(hdoc.getContent())) ;
@@ -20,7 +19,7 @@ public class ParserPerformanceUnitTest {
     System.out.println(html);
     long start = System.currentTimeMillis() ;
     for(int i = 0; i < 10000; i++) {
-    	NekoParser.INSTANCE.parseNonWellForm(html) ;
+      NekoParser.INSTANCE.parseNonWellForm(html) ;
     }
     long finish = System.currentTimeMillis() ;
     System.out.println("Exec in: " + (finish - start));

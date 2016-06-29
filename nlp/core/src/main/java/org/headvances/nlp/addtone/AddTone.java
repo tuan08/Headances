@@ -17,8 +17,7 @@ public class AddTone {
   public int loadCorpus() throws Exception {
     String s = new String();
 
-    BufferedReader in = new BufferedReader(new InputStreamReader(
-        new FileInputStream("map.txt"), "UTF-16"));
+    BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream("map.txt"), "UTF-16"));
     while ((s = in.readLine()) != null) {
       String[] temp = s.split("\\|");
       if (temp.length == 2)
@@ -26,16 +25,14 @@ public class AddTone {
     }
     in.close();
 
-    in = new BufferedReader(new InputStreamReader(new FileInputStream(
-        "bigramDict.txt"), "UTF-16"));
+    in = new BufferedReader(new InputStreamReader(new FileInputStream("bigramDict.txt"), "UTF-16"));
     while ((s = in.readLine()) != null) {
       String[] temp = s.split("\\|");
-      if (temp.length == 2)
-        this.htProbability.put(temp[0],
-            Double.valueOf(Double.parseDouble(temp[1])));
+      if (temp.length == 2) {
+        this.htProbability.put(temp[0], Double.valueOf(Double.parseDouble(temp[1])));
+      }
     }
     in.close();
-
     return 1;
   }
 
@@ -213,8 +210,7 @@ public class AddTone {
   }
 
   public String addTextSegment(String textSegment) {
-    StringTokenizer stk = new StringTokenizer(textSegment,
-        "()[]/-\"…',“”.‘’?!:;", true);
+    StringTokenizer stk = new StringTokenizer(textSegment, "()[]/-\"…',“”.‘’?!:;", true);
 
     textSegment = new String();
     while (stk.hasMoreTokens()) {
@@ -236,8 +232,7 @@ public class AddTone {
         temp = " " + temp + " ";
         check = true;
       }
-      if ((temp.equals("\"")) || (temp.equals("'")) || (temp.equals("\n"))
-          || (temp.equals("/")))
+      if ((temp.equals("\"")) || (temp.equals("'")) || (temp.equals("\n")) || (temp.equals("/")))
         check = true;
       if (!check) {
         temp = addTone(temp);

@@ -1,14 +1,11 @@
 package org.headvances.html.dom;
 
-import junit.framework.Assert;
-
-import org.headvances.html.dom.TNode;
-import org.headvances.html.dom.TDocument;
 import org.headvances.html.dom.processor.CleanEmptyNodeProcessor;
 import org.headvances.html.dom.processor.TNodePrinter;
 import org.headvances.html.dom.tagger.LinkBlockTagger;
-import org.headvances.html.dom.tagger.LinkBlockTagger;
 import org.junit.Test;
+
+import junit.framework.Assert;
 
 /**
  * $Author: Tuan Nguyen$ 

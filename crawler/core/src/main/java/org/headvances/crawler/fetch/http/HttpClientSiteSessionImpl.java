@@ -83,7 +83,7 @@ public class HttpClientSiteSessionImpl implements SiteSession {
       HttpGet httpget = new HttpGet(fetchUrl); 
       BasicHttpContext httpContext = new BasicHttpContext();
       httpContext.setAttribute("crawler.site", this.hostname) ;
-      httpContext.setAttribute(ClientContext.COOKIE_STORE, cookieStore);
+      httpContext.setAttribute(HttpClientContext.COOKIE_STORE, cookieStore);
       HttpResponse response = httpclient.execute(httpget, httpContext);
       String redirectUrl = (String)httpContext.getAttribute("url.redirect") ;
       if(redirectUrl != null) {
